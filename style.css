@@ -191,6 +191,7 @@ p {
 footer {
   background-color: rgb(56, 56, 56);
   height: 13rem;
+  cursor: pointer;
 }
 footer img {
   filter: invert(100%);
@@ -205,6 +206,9 @@ footer ul {
 }
 footer li {
   padding: 0.3rem;
+}
+footer li:hover {
+  color: #9356dc;
 }
 footer li i {
   padding-right: 0.4rem;
