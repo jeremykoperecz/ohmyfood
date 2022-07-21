@@ -1,0 +1,11 @@
+@mixin ombre{
+    background:linear-gradient(0deg,$background 90%,darken($background,8) );}
+@mixin ombre2{
+    background:linear-gradient(0deg,darken($background2,3) 20%,$background2 );
+}
+@mixin police{
+    font-family: 'Shrikhand', sans-serif;
+}
+@mixin police2{
+    font-family: 'Shrikhand', cursive;
+}

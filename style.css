@@ -1,0 +1,278 @@
+@charset "UTF-8";
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  height: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.loca {
+  display: flex;
+  justify-content: center;
+  border: none;
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(247, 245, 245) 90%, #e5dede);
+}
+.loca .fa-solid {
+  width: 2rem;
+  padding-top: 1.3rem;
+  font-size: large;
+  margin-left: 4rem;
+}
+.loca .research-bar {
+  background: linear-gradient(0deg, rgb(247, 245, 245) 90%, #e5dede);
+  border: none;
+  font-size: large;
+  justify-content: center;
+}
+
+.header {
+  background: linear-gradient(0deg, #f4f4f4 20%, rgb(252, 252, 252));
+  height: 23rem;
+}
+.header .header__titre {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+.header .header__titre h1 {
+  text-align: center;
+  font-size: 1.9rem;
+}
+.header .header__titre p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.header__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
+.header__btn .btn {
+  border: none;
+  font-size: 1.24rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 3rem;
+  color: white;
+  background: linear-gradient(0deg, #9356dc, #FF79DA 90%);
+  cursor: pointer;
+}
+
+.recherche {
+  display: flex;
+  flex-direction: column;
+}
+.recherche h1 {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+.recherche__bouton {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
+  height: 5rem;
+}
+.recherche__bouton .btn {
+  font-size: large;
+  border: none;
+  background-color: #f7f7f7;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.recherche__bouton .fa-solid {
+  display: flex;
+  align-items: center;
+  color: grey;
+  padding-right: 0.75rem;
+  margin-right: 1.5rem;
+}
+
+.number {
+  background-color: #9356dc;
+  border-radius: 3rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  margin-top: 1.5rem;
+  position: absolute;
+  transform: translateX(-10.8rem);
+}
+.number .fa-solid {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 245, 245);
+  height: 88rem;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+}
+.photo h1 {
+  margin: 4.5rem 0 0.5rem 1rem;
+}
+
+.img__bloc {
+  border: 1px rgb(247, 245, 245) solid;
+  border-radius: 10px;
+  height: 18rem;
+  margin: 1rem;
+  background-color: white;
+}
+.img__bloc img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  height: 72%;
+}
+.img__bloc__coeur {
+  position: absolute;
+  transform: translate(-2rem, -1.8rem);
+  font-size: 1.6rem;
+}
+.img__bloc__new {
+  position: absolute;
+  transform: translate(18rem, -17rem);
+  background-color: #99e2d0;
+  font-weight: bold;
+  color: #278870;
+  font-size: small;
+  height: 1.7rem;
+}
+.img__bloc__new p {
+  margin-top: 0.4rem;
+}
+
+.img__bloc__text h2,
+p {
+  margin: 0.6rem;
+}
+
+footer {
+  background-color: rgb(56, 56, 56);
+  height: 13rem;
+}
+footer img {
+  filter: invert(100%);
+  height: 1.2rem;
+  padding: 1.5rem;
+}
+footer ul {
+  margin: 0;
+  color: white;
+  list-style: none;
+  padding-left: 1rem;
+}
+footer li {
+  padding: 0.3rem;
+}
+footer li i {
+  padding-right: 0.4rem;
+}
+
+i.fa-solid.fa-utensils {
+  padding-right: 0.55rem;
+}
+
+i.fa-solid.fa-handshake-angle {
+  font-size: 0.8rem;
+}
+
+/*page menu a la française*/
+.logo a {
+  color: black;
+  transform: translate(-3.5rem, 0.5rem);
+}
+
+.top__img img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  height: 84rem;
+}
+
+h3 {
+  padding: 2.5rem 0 0.5rem 2rem;
+  border-bottom: 0.2rem solid #99e2d0;
+}
+
+.menu__fr {
+  background-color: #f7f7f7;
+  border-radius: 3rem 3rem 0 0;
+  height: 89rem;
+  position: relative;
+  top: -4.5rem;
+}
+.menu__fr h1 {
+  padding: 1.5rem 0 0 2rem;
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 0;
+}
+
+i.fa-regular.fa-heart {
+  transform: translate(22rem, -2.2rem);
+  font-size: x-large;
+}
+
+.menu__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
+  height: 5rem;
+}
+.menu__btn h4 {
+  margin: 0;
+  padding: 1rem 0 0 1.1rem;
+}
+
+.menu__prix {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.header__btn--modif {
+  margin: 3rem 0 0 0;
+}
+
+/*la note encantée*/
+.main2 {
+  height: 89rem;
+}
+
+.menu__fr--mod {
+  height: 94.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
