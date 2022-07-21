@@ -109,6 +109,11 @@ body {
     background-color: $background3;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
+    transform: scale(1);
+    transition:transform 1s;
+        &:hover{
+             transform: scale(1.1);
+        }
     .btn {
         font-size: large;
         border: none;
@@ -174,10 +179,17 @@ body {
 
     &__coeur {
         position: relative;
-        transform: translate(-2rem, -1.8rem);
+        transform: translate(20rem, -3.8rem);
+    }
+    i.fa-regular.fa-heart{
         font-size: 1.6rem;
         cursor: pointer;
-     
+        transform: scale(1);
+        transition:transform 1s;
+        &:hover{
+             transform: scale(1.2);
+             
+        }
     }
     
     &__new{
@@ -305,4 +317,3 @@ i.fa-regular.fa-heart{
 
             
             
-   

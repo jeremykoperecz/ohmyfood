@@ -98,6 +98,11 @@ body {
   background-color: #f7f7f7;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.recherche__bouton:hover {
+  transform: scale(1.1);
 }
 .recherche__bouton .btn {
   font-size: large;
@@ -154,16 +159,16 @@ body {
 }
 .img__bloc__coeur {
   position: relative;
-  transform: translate(-2rem, -1.8rem);
-  font-size: 1.6rem;
-  cursor: pointer;
+  transform: translate(20rem, -3.8rem);
 }
 .img__bloc i.fa-regular.fa-heart {
-  transition: all 1s;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s;
 }
 .img__bloc i.fa-regular.fa-heart:hover {
-  transform: scale(2.5s);
-  background-color: linear-gradient(0deg, #9356dc, #FF79DA 90%);
+  transform: scale(1.2);
 }
 .img__bloc__new {
   position: absolute;
