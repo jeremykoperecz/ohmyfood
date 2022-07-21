@@ -173,10 +173,13 @@ body {
     }
 
     &__coeur {
-        position: absolute;
+        position: relative;
         transform: translate(-2rem, -1.8rem);
         font-size: 1.6rem;
+        cursor: pointer;
+     
     }
+    
     &__new{
         position: absolute;
         transform: translate(18rem, -17rem);

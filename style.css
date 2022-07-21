@@ -153,9 +153,17 @@ body {
   height: 72%;
 }
 .img__bloc__coeur {
-  position: absolute;
+  position: relative;
   transform: translate(-2rem, -1.8rem);
   font-size: 1.6rem;
+  cursor: pointer;
+}
+.img__bloc i.fa-regular.fa-heart {
+  transition: all 1s;
+}
+.img__bloc i.fa-regular.fa-heart:hover {
+  transform: scale(2.5s);
+  background-color: linear-gradient(0deg, #9356dc, #FF79DA 90%);
 }
 .img__bloc__new {
   position: absolute;
