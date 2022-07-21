@@ -65,6 +65,12 @@ body {
   justify-content: center;
   margin-top: 1.5rem;
   margin-bottom: 7rem;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.4s;
+}
+.header__btn:hover {
+  transform: scale(1.1);
 }
 .header__btn .btn {
   border: none;

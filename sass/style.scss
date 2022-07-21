@@ -73,6 +73,12 @@ body {
     justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 7rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    &:hover{
+        transform: scale(1.1);
+    }
 
     .btn {
         border: none;
