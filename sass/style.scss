@@ -74,8 +74,7 @@ body {
     margin-top: 1.5rem;
     margin-bottom: 7rem;
     transform: scale(1);
-    transition-property: transform;
-    transition-duration: 0.4s;
+    transition: transform 0.2s;
     &:hover{
         transform: scale(1.1);
     }
