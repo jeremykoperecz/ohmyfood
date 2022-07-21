@@ -65,11 +65,6 @@ body {
   justify-content: center;
   margin-top: 1.5rem;
   margin-bottom: 7rem;
-  transform: scale(1);
-  transition: transform 0.2s;
-}
-.header__btn:hover {
-  transform: scale(1.1);
 }
 .header__btn .btn {
   border: none;
@@ -79,6 +74,10 @@ body {
   color: white;
   background: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.header__btn .btn:hover {
+  transform: scale(1.1);
 }
 
 .recherche {
