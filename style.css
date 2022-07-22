@@ -211,6 +211,7 @@ footer ul {
 }
 footer li {
   padding: 0.3rem;
+  width: 13rem;
 }
 footer li:hover {
   color: #9356dc;
