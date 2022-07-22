@@ -165,6 +165,7 @@ body {
 .img__bloc__coeur {
   position: relative;
   transform: translate(20rem, -3.8rem);
+  width: 0.1rem;
 }
 .img__bloc i.fa-regular.fa-heart {
   font-size: 1.6rem;
@@ -276,6 +277,11 @@ i.fa-regular.fa-heart {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+.menu__btn:hover {
+  transform: scale(1.025);
 }
 .menu__btn h4 {
   margin: 0;

@@ -176,6 +176,7 @@ body {
     &__coeur {
         position: relative;
         transform: translate(20rem, -3.8rem);
+        width: 0.1rem;
     }
     i.fa-regular.fa-heart{
         font-size: 1.6rem;
@@ -289,6 +290,7 @@ i.fa-regular.fa-heart{
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
+    @include mouv;
     h4{
         margin: 0;
         padding: 1rem 0 0 1.1rem;    
