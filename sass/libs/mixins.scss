@@ -9,3 +9,10 @@
 @mixin police2{
     font-family: 'Shrikhand', cursive;
 }
+@mixin mouv{
+    transform: scale(1);
+    transition:transform 0.4s;
+        &:hover{
+             transform: scale(1.025);
+        }
+}
