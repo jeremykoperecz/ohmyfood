@@ -50,6 +50,11 @@ body {
   justify-content: space-around;
   padding-top: 2rem;
 }
+@media (min-width: 820px) {
+  .header .header__titre {
+    width: 100%;
+  }
+}
 .header .header__titre h1 {
   text-align: center;
   font-size: 1.9rem;
@@ -85,10 +90,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 820px) {
+  .recherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .recherche h1 {
   margin-left: 1rem;
   font-size: 1.8rem;
   margin-top: 3rem;
+}
+@media (min-width: 820px) {
+  .recherche h1 {
+    display: none;
+  }
 }
 
 .recherche__bouton {
@@ -105,6 +122,12 @@ body {
 .recherche__bouton:hover {
   filter: brightness(1.1);
   box-shadow: 0 0.2rem 1rem #FF79DA;
+}
+@media (min-width: 820px) {
+  .recherche__bouton {
+    width: 100%;
+    margin-top: 5rem;
+  }
 }
 .recherche__bouton .btn {
   font-size: large;
@@ -142,8 +165,19 @@ body {
   margin-top: 5rem;
   padding-bottom: 3rem;
 }
+@media (min-width: 820px) {
+  .photo {
+    width: 50%;
+    margin: auto;
+  }
+}
 .photo h1 {
   margin: 4.5rem 0 0.5rem 1rem;
+}
+@media (min-width: 820px) {
+  .photo h1 {
+    display: none;
+  }
 }
 
 .img__bloc {
@@ -211,6 +245,12 @@ footer ul {
   color: white;
   list-style: none;
   padding-left: 1rem;
+}
+@media (min-width: 820px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 footer li {
   padding: 0.3rem;
