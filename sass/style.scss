@@ -363,25 +363,36 @@ i.fa-solid.fa-circle-check {
 
 
 .loader{
-    border:10px solid $primaire;
-    border-top:10px solid $tertiaire ;
-    border-bottom: 10px solid $secondaire;
+    background: content-box radial-gradient($primaire, $tertiaire);
+    border-left: 1rem solid $tertiaire;
+    border-right: 1rem solid $secondaire;
+    border-top: 1rem solid $tertiaire ;
+    border-bottom: 1rem solid $secondaire;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    animation: spin 2.5s linear infinite;
+    animation: spin 3s linear;
+    opacity: 0;
 }
 @keyframes spin {
     0%{
         transform: rotate(0deg);
+        
+    }
+   
+    90%{
+        opacity: 1;
+        
     }
     100%{
         transform: rotate(360deg);
-    }
+        
+       
 }
+    }
