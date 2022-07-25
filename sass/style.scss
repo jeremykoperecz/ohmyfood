@@ -361,13 +361,13 @@ i.fa-solid.fa-circle-check {
     height: 94.5rem;
 }
 
-
+/* creation du loader*/
 .loader{
     background: content-box radial-gradient($primaire, $tertiaire);
-    border-left: 1rem solid $tertiaire;
-    border-right: 1rem solid $secondaire;
-    border-top: 1rem solid $tertiaire ;
-    border-bottom: 1rem solid $secondaire;
+    border-left: rem solid content-box radial-gradient($primaire, $tertiaire);
+    border-right: rem solid content-box radial-gradient($primaire, $tertiaire);
+    border-top: 2rem solid $tertiaire ;
+    border-bottom: 2rem solid $secondaire;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -382,17 +382,12 @@ i.fa-solid.fa-circle-check {
 }
 @keyframes spin {
     0%{
-        transform: rotate(0deg);
-        
-    }
-   
+        transform: rotate(0deg);       
+    }   
     90%{
-        opacity: 1;
-        
+        opacity: 1;        
     }
     100%{
-        transform: rotate(360deg);
-        
-       
+        transform: rotate(360deg);      
 }
     }

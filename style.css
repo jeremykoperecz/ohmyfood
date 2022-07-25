@@ -332,12 +332,13 @@ i.fa-solid.fa-circle-check {
   height: 94.5rem;
 }
 
+/* creation du loader*/
 .loader {
   background: content-box radial-gradient(#9356dc, #99e2d0);
-  border-left: 1rem solid #99e2d0;
-  border-right: 1rem solid #FF79DA;
-  border-top: 1rem solid #99e2d0;
-  border-bottom: 1rem solid #FF79DA;
+  border-left: rem solid content-box radial-gradient(#9356dc, #99e2d0);
+  border-right: rem solid content-box radial-gradient(#9356dc, #99e2d0);
+  border-top: 2rem solid #99e2d0;
+  border-bottom: 2rem solid #FF79DA;
   border-radius: 50%;
   width: 100px;
   height: 100px;
