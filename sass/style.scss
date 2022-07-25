@@ -73,7 +73,7 @@ body {
     justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 7rem;
-    
+
 
     .btn {
         border: none;
@@ -83,16 +83,8 @@ body {
         color: white;
         background: linear-gradient(0deg, ($primaire), $secondaire 90%);
         cursor: pointer;
-        transition: filter 0.3s, box-shadow 0.4s;
-        
-        &:hover{
-            filter: brightness(1.2);
-            box-shadow: 0 0.2rem 1rem black;
-            
-        }
-        
-         
-    
+        @include bri;
+
     }
 }
 
@@ -115,7 +107,9 @@ body {
     background-color: $background3;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-   
+    cursor: pointer;
+    @include bri;
+
     .btn {
         font-size: large;
         border: none;
@@ -159,7 +153,8 @@ body {
     height: 88rem;
     margin-top: 5rem;
     padding-bottom: 3rem;
-    h1{
+
+    h1 {
         margin: 4.5rem 0 0.5rem 1rem;
     }
 
@@ -171,7 +166,8 @@ body {
     height: 18rem;
     margin: 1rem;
     background-color: white;
-    
+    @include bri;
+
     img {
         width: 100%;
         object-fit: cover;
@@ -184,18 +180,20 @@ body {
         transform: translate(20rem, -3.8rem);
         width: 0.1rem;
     }
-    i.fa-regular.fa-heart{
+
+    i.fa-regular.fa-heart {
         font-size: 1.6rem;
         cursor: pointer;
         transform: scale(1);
-        transition:transform 1s;
-        &:hover{
-             transform: scale(1.2);
-             
+        transition: transform 1s;
+
+        &:hover {
+            transform: scale(1.2);
+
         }
     }
-    
-    &__new{
+
+    &__new {
         position: absolute;
         transform: translate(18rem, -17rem);
         background-color: $tertiaire ;
@@ -203,8 +201,9 @@ body {
         color: darken($tertiaire, 40);
         font-size: small;
         height: 1.7rem;
-        p{
-           margin-top: 0.4rem; 
+
+        p {
+            margin-top: 0.4rem;
         }
     }
 }
@@ -214,80 +213,98 @@ p {
     margin: 0.6rem;
 }
 
-footer{
+footer {
     background-color: rgb(56, 56, 56);
     height: 13rem;
     cursor: pointer;
-   
-    img{
-         filter:invert(100%);
-         height: 1.2rem;
-         padding: 1.5rem;
+
+    img {
+        filter: invert(100%);
+        height: 1.2rem;
+        padding: 1.5rem;
     }
-    ul{
-        margin:0;
+
+    ul {
+        margin: 0;
         color: white;
         list-style: none;
         padding-left: 1rem;
-   
+
     }
-    li{
+
+    li {
         padding: 0.3rem;
         width: 13rem;
-        &:hover{
-            color:$primaire;
-    }
-        i{
-            padding-right: 0.4rem;
-               
+
+        &:hover {
+            color: $primaire;
         }
-        
-     }
+
+        i {
+            padding-right: 0.4rem;
+
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            
+        }
+
+    }
 }
-i.fa-solid.fa-utensils{
+
+i.fa-solid.fa-utensils {
     padding-right: 0.55rem;
-    
+
 }
-i.fa-solid.fa-handshake-angle{
+
+i.fa-solid.fa-handshake-angle {
     font-size: 0.8rem;
 }
 
 /*page menu a la française*/
 
-.logo a{
+.logo a {
     color: black;
     transform: translate(-3.5rem, 0.5rem);
 
 }
-.top__img img{
+
+.top__img img {
     height: 18rem;
     width: 100%;
     object-fit: cover;
 }
-main{
+
+main {
     height: 84rem;
 }
-h3{
-    padding:2.5rem 0 0.5rem 2rem;
+
+h3 {
+    padding: 2.5rem 0 0.5rem 2rem;
     border-bottom: 0.2rem solid $tertiaire;
 }
-.menu__fr{
+
+.menu__fr {
     background-color: $background3;
     border-radius: 3rem 3rem 0 0;
     height: 89rem;
     position: relative;
     top: -4.5rem;
-    h1{
+
+    h1 {
         padding: 1.5rem 0 0 2rem;
         @include police2;
         margin-bottom: 0;
-    }    
+    }
 }
-i.fa-regular.fa-heart{
+
+i.fa-regular.fa-heart {
     transform: translate(22rem, -2.2rem);
     font-size: x-large;
 }
-.menu__btn{
+
+.menu__btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,21 +313,21 @@ i.fa-regular.fa-heart{
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-  
-    h4{
+    @include bri;
+    h4 {
         margin: 0;
-        padding: 1rem 0 0 1.1rem;    
+        padding: 1rem 0 0 1.1rem;
     }
-    }
+}
 
-.menu__barre{
+.menu__barre {
     display: none;
     justify-content: flex-end;
 }
-   
-    
-i.fa-solid.fa-circle-check{
- display: none;
+
+
+i.fa-solid.fa-circle-check {
+    display: none;
     justify-content: flex-end;
     position: relative;
     top: -2.2rem;
@@ -318,30 +335,25 @@ i.fa-solid.fa-circle-check{
     color: $tertiaire;
     padding-right: 1rem;
 }
-    
 
-.menu__prix{
-        display: flex;
-        justify-content:space-between ; 
-        margin-left: 0.5rem;  
-        font-size: 0.9rem;   
-    
+
+.menu__prix {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+
 }
-.header__btn--modif{
+
+.header__btn--modif {
     margin: 3rem 0 0 0;
 }
+
 /*la note encantée*/
-.main2{
+.main2 {
     height: 89rem;
 }
 
-.menu__fr--mod{
+.menu__fr--mod {
     height: 94.5rem;
-}      
-
-
-    
-
-
-            
-            
+}

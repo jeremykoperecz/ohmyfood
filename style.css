@@ -77,7 +77,7 @@ body {
   transition: filter 0.3s, box-shadow 0.4s;
 }
 .header__btn .btn:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
   box-shadow: 0 0.2rem 1rem black;
 }
 
@@ -99,6 +99,12 @@ body {
   background-color: #f7f7f7;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
+  cursor: pointer;
+  transition: filter 0.3s, box-shadow 0.4s;
+}
+.recherche__bouton:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0.2rem 1rem black;
 }
 .recherche__bouton .btn {
   font-size: large;
@@ -146,6 +152,11 @@ body {
   height: 18rem;
   margin: 1rem;
   background-color: white;
+  transition: filter 0.3s, box-shadow 0.4s;
+}
+.img__bloc:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0.2rem 1rem black;
 }
 .img__bloc img {
   width: 100%;
@@ -211,6 +222,10 @@ footer li:hover {
 footer li i {
   padding-right: 0.4rem;
 }
+footer li a {
+  color: white;
+  text-decoration: none;
+}
 
 i.fa-solid.fa-utensils {
   padding-right: 0.55rem;
@@ -268,6 +283,11 @@ i.fa-regular.fa-heart {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
+  transition: filter 0.3s, box-shadow 0.4s;
+}
+.menu__btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0.2rem 1rem black;
 }
 .menu__btn h4 {
   margin: 0;
