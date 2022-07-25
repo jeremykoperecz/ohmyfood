@@ -360,3 +360,28 @@ i.fa-solid.fa-circle-check {
 .menu__fr--mod {
     height: 94.5rem;
 }
+
+
+.loader{
+    border:10px solid $primaire;
+    border-top:10px solid $tertiaire ;
+    border-bottom: 10px solid $secondaire;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: spin 2.5s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
