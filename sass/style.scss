@@ -85,8 +85,11 @@ body {
         cursor: pointer;
         transition: transform 0.2s;
         &:hover{
-            transform: scale(1.1);
-    }
+            filter: brightness(1.2);
+        }
+        
+         
+    
     }
 }
 
@@ -109,7 +112,7 @@ body {
     background-color: $background3;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    @include mouv;
+   
     .btn {
         font-size: large;
         border: none;
@@ -165,7 +168,7 @@ body {
     height: 18rem;
     margin: 1rem;
     background-color: white;
-    @include mouv;
+    
     img {
         width: 100%;
         object-fit: cover;
@@ -290,13 +293,30 @@ i.fa-regular.fa-heart{
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    @include mouv;
+  
     h4{
         margin: 0;
         padding: 1rem 0 0 1.1rem;    
     }
-   
     }
+
+.menu__barre{
+    display: none;
+    justify-content: flex-end;
+}
+   
+    
+i.fa-solid.fa-circle-check{
+ display: none;
+    justify-content: flex-end;
+    position: relative;
+    top: -2.2rem;
+    font-size: 2rem;
+    color: $tertiaire;
+    padding-right: 1rem;
+}
+    
+
 .menu__prix{
         display: flex;
         justify-content:space-between ; 

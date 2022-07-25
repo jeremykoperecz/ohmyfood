@@ -77,7 +77,7 @@ body {
   transition: transform 0.2s;
 }
 .header__btn .btn:hover {
-  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 .recherche {
@@ -98,11 +98,6 @@ body {
   background-color: #f7f7f7;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
-  transform: scale(1);
-  transition: transform 0.4s;
-}
-.recherche__bouton:hover {
-  transform: scale(1.025);
 }
 .recherche__bouton .btn {
   font-size: large;
@@ -150,11 +145,6 @@ body {
   height: 18rem;
   margin: 1rem;
   background-color: white;
-  transform: scale(1);
-  transition: transform 0.4s;
-}
-.img__bloc:hover {
-  transform: scale(1.025);
 }
 .img__bloc img {
   width: 100%;
@@ -277,15 +267,25 @@ i.fa-regular.fa-heart {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
-  transform: scale(1);
-  transition: transform 0.4s;
-}
-.menu__btn:hover {
-  transform: scale(1.025);
 }
 .menu__btn h4 {
   margin: 0;
   padding: 1rem 0 0 1.1rem;
+}
+
+.menu__barre {
+  display: none;
+  justify-content: flex-end;
+}
+
+i.fa-solid.fa-circle-check {
+  display: none;
+  justify-content: flex-end;
+  position: relative;
+  top: -2.2rem;
+  font-size: 2rem;
+  color: #99e2d0;
+  padding-right: 1rem;
 }
 
 .menu__prix {
