@@ -74,10 +74,11 @@ body {
   color: white;
   background: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: filter 0.3s, box-shadow 0.4s;
 }
 .header__btn .btn:hover {
   filter: brightness(1.2);
+  box-shadow: 0 0.2rem 1rem black;
 }
 
 .recherche {

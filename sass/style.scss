@@ -83,9 +83,12 @@ body {
         color: white;
         background: linear-gradient(0deg, ($primaire), $secondaire 90%);
         cursor: pointer;
-        transition: transform 0.2s;
+        transition: filter 0.3s, box-shadow 0.4s;
+        
         &:hover{
             filter: brightness(1.2);
+            box-shadow: 0 0.2rem 1rem black;
+            
         }
         
          
