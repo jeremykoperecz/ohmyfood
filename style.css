@@ -78,7 +78,7 @@ body {
 }
 .header__btn .btn:hover {
   filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem black;
+  box-shadow: 0 0.2rem 1rem #FF79DA;
 }
 
 .recherche {
@@ -104,7 +104,7 @@ body {
 }
 .recherche__bouton:hover {
   filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem black;
+  box-shadow: 0 0.2rem 1rem #FF79DA;
 }
 .recherche__bouton .btn {
   font-size: large;
@@ -156,7 +156,7 @@ body {
 }
 .img__bloc:hover {
   filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem black;
+  box-shadow: 0 0.2rem 1rem #FF79DA;
 }
 .img__bloc img {
   width: 100%;
@@ -290,7 +290,7 @@ i.fa-regular.fa-heart {
 }
 .menu__btn:hover {
   filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem black;
+  box-shadow: 0 0.2rem 1rem #FF79DA;
 }
 .menu__btn h4 {
   margin: 0;
