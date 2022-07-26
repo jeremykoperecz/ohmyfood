@@ -120,30 +120,33 @@ body {
     background-color: $background3;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    cursor: pointer;
-    @include bri2;
     @media (min-width:820px){
         width: 100%;
         margin-top: 5rem;
     }
 
     > .btn {
+        cursor: pointer;
+        width: 100%;
         font-size: large;
         border: none;
         background-color: $background3;
-        padding: 1.5rem 0 1.5rem 0;
+        padding: 1.5rem 2rem 1.5rem 0;
+        border-radius: 1rem;
         @include bri2 ;
-
     }
-
-    .fa-solid {
-        display: flex;
-        align-items: center;
-        color: grey;
-        padding-right: 0.75rem;
-        margin-right: 1.5rem;
-
+    > .fa-solid {
+        position: relative;
+        top: 2rem;
+        left: 2.5rem;
+        :hover{
+            color:$primaire;
+        }
     }
+    .fa-solid.fa-mobile-screen-button{
+        padding-right: 1rem;
+    }
+   
 }
 
 .number {
@@ -157,13 +160,11 @@ body {
     .fa-solid {
         color: white;
         margin: 0;
-        padding: 0;
+        padding:0;
 
 
     }
-.fa-solid.fa-mobile-screen-button{
-    padding-left: 1 rem;
-}
+
 
 }
 

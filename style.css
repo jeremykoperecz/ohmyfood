@@ -116,11 +116,6 @@ body {
   background-color: #f7f7f7;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.4s;
-}
-.recherche__bouton:hover {
-  background-color: #f4eefc;
 }
 @media (min-width: 820px) {
   .recherche__bouton {
@@ -129,21 +124,28 @@ body {
   }
 }
 .recherche__bouton > .btn {
+  cursor: pointer;
+  width: 100%;
   font-size: large;
   border: none;
   background-color: #f7f7f7;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 2rem 1.5rem 0;
+  border-radius: 1rem;
   transition: background-color 0.3s, box-shadow 0.4s;
 }
 .recherche__bouton > .btn:hover {
   background-color: #f4eefc;
 }
-.recherche__bouton .fa-solid {
-  display: flex;
-  align-items: center;
-  color: grey;
-  padding-right: 0.75rem;
-  margin-right: 1.5rem;
+.recherche__bouton > .fa-solid {
+  position: relative;
+  top: 2rem;
+  left: 2.5rem;
+}
+.recherche__bouton > .fa-solid :hover {
+  color: #9356dc;
+}
+.recherche__bouton .fa-solid.fa-mobile-screen-button {
+  padding-right: 1rem;
 }
 
 .number {
@@ -158,9 +160,6 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-}
-.number .fa-solid.fa-mobile-screen-button {
-  padding-left: 1 rem;
 }
 
 .photo {
