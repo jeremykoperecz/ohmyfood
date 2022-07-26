@@ -325,7 +325,6 @@ i.fa-regular.fa-heart {
 .menu__btn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 1rem 1rem 1rem 1rem;
   border-radius: 1rem;
   background-color: white;
@@ -339,7 +338,7 @@ i.fa-regular.fa-heart {
 }
 .menu__btn h4 {
   margin: 0;
-  padding: 1rem 0 0 1.1rem;
+  padding: 1rem 0 0 0.6rem;
 }
 
 .menu__barre {
@@ -359,9 +358,10 @@ i.fa-solid.fa-circle-check {
 
 .menu__prix {
   display: flex;
-  justify-content: space-between;
-  margin-left: 0.5rem;
+  justify-content: flex-end;
   font-size: 0.9rem;
+  position: relative;
+  bottom: 2rem;
 }
 
 .header__btn--modif {
