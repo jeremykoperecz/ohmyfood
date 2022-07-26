@@ -117,11 +117,10 @@ body {
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
   cursor: pointer;
-  transition: filter 0.3s, box-shadow 0.4s;
+  transition: background-color 0.3s, box-shadow 0.4s;
 }
 .recherche__bouton:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem #FF79DA;
+  background-color: #f4eefc;
 }
 @media (min-width: 820px) {
   .recherche__bouton {
@@ -129,11 +128,15 @@ body {
     margin-top: 5rem;
   }
 }
-.recherche__bouton .btn {
+.recherche__bouton > .btn {
   font-size: large;
   border: none;
   background-color: #f7f7f7;
   padding: 1.5rem 0 1.5rem 0;
+  transition: background-color 0.3s, box-shadow 0.4s;
+}
+.recherche__bouton > .btn:hover {
+  background-color: #f4eefc;
 }
 .recherche__bouton .fa-solid {
   display: flex;
@@ -155,6 +158,9 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+}
+.number .fa-solid.fa-mobile-screen-button {
+  padding-left: 1 rem;
 }
 
 .photo {

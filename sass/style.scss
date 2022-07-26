@@ -121,17 +121,18 @@ body {
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
     cursor: pointer;
-    @include bri;
+    @include bri2;
     @media (min-width:820px){
         width: 100%;
         margin-top: 5rem;
     }
 
-    .btn {
+    > .btn {
         font-size: large;
         border: none;
         background-color: $background3;
         padding: 1.5rem 0 1.5rem 0;
+        @include bri2 ;
 
     }
 
@@ -160,6 +161,9 @@ body {
 
 
     }
+.fa-solid.fa-mobile-screen-button{
+    padding-left: 1 rem;
+}
 
 }
 

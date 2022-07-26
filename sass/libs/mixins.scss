@@ -16,3 +16,10 @@
             box-shadow: 0 0.2rem 1rem $secondaire;     
         }
 }
+@mixin bri2{
+    transition: background-color 0.3s, box-shadow 0.4s;
+        &:hover{
+            background-color: lighten($primaire, 36);
+                
+        }
+}
