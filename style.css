@@ -330,20 +330,31 @@ i.fa-regular.fa-heart {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
-  transition: filter 0.3s, box-shadow 0.4s;
 }
-.menu__btn:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem #FF79DA;
+.menu__btn:hover .menu__prix {
+  animation: 3s ease-in reverse slidein;
 }
-.menu__btn h4 {
+@keyframes slidein {
+  from {
+    transform: scaleX(0.9);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+h4 {
   margin: 0;
   padding: 1rem 0 0 0.6rem;
 }
 
 .menu__barre {
-  display: none;
-  justify-content: flex-end;
+  display: flex;
+  background: #99e2d0;
+  height: 100%;
+}
+.menu__barre:hover {
+  display: flex;
 }
 
 i.fa-solid.fa-circle-check {
@@ -362,6 +373,17 @@ i.fa-solid.fa-circle-check {
   font-size: 0.9rem;
   position: relative;
   bottom: 2rem;
+}
+.menu__prix:hover {
+  animation: 3s ease-in reverse slidein;
+}
+@keyframes slidein {
+  from {
+    transform: scaleX(0.9);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .header__btn--modif {

@@ -343,16 +343,35 @@ i.fa-regular.fa-heart {
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    @include bri;
+    &:hover{
+        .menu__prix{
+            animation:3s ease-in reverse slidein;
+        }
+        @keyframes slidein {
+            from { transform: scaleX(0.9); }
+            to   { transform: scaleX(1); }
+          }
+
+        }
+    }
+   
     h4 {
         margin: 0;
         padding: 1rem 0 0 0.6rem;
     }
-}
+
 
 .menu__barre {
-    display: none;
-    justify-content: flex-end;
+    display: flex;
+    background: $tertiaire;
+    height: 100%;
+   
+  
+     &:hover{
+    display: flex;
+    }
+    
+   
 }
 
 
@@ -373,6 +392,14 @@ i.fa-solid.fa-circle-check {
     font-size: 0.9rem;
     position: relative;
     bottom: 2rem;
+    &:hover{
+        animation:3s ease-in reverse slidein;
+    }
+    @keyframes slidein {
+        from { transform: scaleX(0.9); }
+        to   { transform: scaleX(1); }
+      }
+   
 
 }
 
