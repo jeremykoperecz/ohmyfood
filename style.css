@@ -339,7 +339,8 @@ i.fa-solid.fa-heart:hover {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
-  animation: animation 2s;
+  animation: animation 2s ease-in-out;
+  transform-origin: left;
 }
 @keyframes animation {
   0% {
