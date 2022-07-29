@@ -292,7 +292,7 @@ i.fa-solid.fa-handshake-angle {
     height: 18rem;
     width: 100%;
     object-fit: cover;
-    
+
 }
 main {
     height: 84rem;
@@ -314,6 +314,12 @@ h3 {
         padding: 1.5rem 0 0 2rem;
         @include police2;
         margin-bottom: 0;
+    }
+    i.fa-regular.fa-heart{
+        position: relative;
+        top: -2.3rem;
+        left: 22rem;
+
     }
 }
 
@@ -353,6 +359,7 @@ i.fa-solid.fa-heart {
         100%{
             transform: scale(1);
         }
+    
     }
     &:hover {
         .menu__prix {
@@ -368,106 +375,111 @@ i.fa-solid.fa-heart {
         }
 
     }
-}
-
-h4 {
-    margin: 0;
-    padding: 1rem 0 0 0.6rem;
-}
 
 
-.fa-solid.fa-circle-check {
-    display: flex;
-    background: $tertiaire;
-    height: 100%;
-    &:hover {
-        animation: 3s ease-in reverse slidein;
+    h4 {
+        margin: 0;
+        padding: 1rem 0 0 0.6rem;
     }
-    @keyframes slidein {
-        from {
-            transform: scaleX(0.9);
+
+
+    .fa-solid.fa-circle-check {
+        display: flex;
+        background: $tertiaire;
+        height: 100%;
+        &:hover {
+            animation: 3s ease-in reverse slidein;
         }
-        to {
-            transform: scaleX(1);
+        @keyframes slidein {
+            from {
+                transform: scaleX(0.9);
+            }
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+
+    }
+
+
+    i.fa-solid.fa-circle-check {
+        display: none;
+        justify-content: flex-end;
+        position: relative;
+        top: -2.2rem;
+        font-size: 2rem;
+        color: $tertiaire;
+        padding-right: 1rem;
+    }
+
+
+    .menu__prix {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.9rem;
+        position: relative;
+        bottom: 2rem;
+        &:hover {
+            animation: 3s ease-in reverse slidein;
+        }
+        @keyframes slidein {
+            from {
+                transform: scaleX(0.9);
+            }
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+
+    }
+
+    .header__btn--modif {
+        margin: 3rem 0 0;
+    }
+
+    /*la note encantée*/
+    .main2 {
+        height: 89rem;
+    }
+
+    .menu__fr--mod {
+        height: 94.5rem;
+    }
+
+    /* creation du loader*/
+    .loader {
+        background-color: white;
+        background: content-box radial-gradient($primaire, $tertiaire);
+        border-left: rem solid content-box radial-gradient($primaire, $tertiaire);
+        border-right: rem solid content-box radial-gradient($primaire, $tertiaire);
+        border-top: 2rem solid $tertiaire;
+        border-bottom: 2rem solid $secondaire;
+        border-radius: 50%;
+        height: 100%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: spin 3s linear;
+        opacity: 0;
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(360deg);
         }
     }
-
-
 }
 
-
-i.fa-solid.fa-circle-check {
-    display: none;
-    justify-content: flex-end;
-    position: relative;
-    top: -2.2rem;
-    font-size: 2rem;
-    color: $tertiaire;
-    padding-right: 1rem;
-}
-
-
-.menu__prix {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 2rem;
-    &:hover {
-        animation: 3s ease-in reverse slidein;
-    }
-    @keyframes slidein {
-        from {
-            transform: scaleX(0.9);
-        }
-        to {
-            transform: scaleX(1);
-        }
-    }
-
-
-}
-
-.header__btn--modif {
-    margin: 3rem 0 0;
-}
-
-/*la note encantée*/
-.main2 {
-    height: 89rem;
-}
-
-.menu__fr--mod {
-    height: 94.5rem;
-}
-
-/* creation du loader*/
-.loader {
-    background-color: white;
-    background: content-box radial-gradient($primaire, $tertiaire);
-    border-left: rem solid content-box radial-gradient($primaire, $tertiaire);
-    border-right: rem solid content-box radial-gradient($primaire, $tertiaire);
-    border-top: 2rem solid $tertiaire;
-    border-bottom: 2rem solid $secondaire;
-    border-radius: 50%;
-    height: 100%;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: spin 3s linear;
-    opacity: 0;
-}
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+   
+    
+   
