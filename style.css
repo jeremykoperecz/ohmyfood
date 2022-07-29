@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 html {
   font-family: "Raleway", sans-serif;
 }
@@ -74,7 +82,7 @@ body {
 .header__btn .btn {
   border: none;
   font-size: 1.24rem;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 3rem;
   color: white;
   background: linear-gradient(0deg, #9356dc, #FF79DA 90%);
@@ -111,7 +119,7 @@ body {
 .recherche__bouton {
   display: flex;
   justify-content: center;
-  margin: 1rem 2rem 1rem 2rem;
+  margin: 1rem 2rem;
   border-radius: 1rem;
   background-color: #f7f7f7;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
@@ -151,7 +159,7 @@ body {
 .number {
   background-color: #9356dc;
   border-radius: 3rem;
-  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  padding: 0.5rem 0.7rem;
   margin-top: 1.5rem;
   position: absolute;
   transform: translateX(-10.8rem);
@@ -191,11 +199,6 @@ body {
   height: 18rem;
   margin: 1rem;
   background-color: white;
-  transition: filter 0.3s, box-shadow 0.4s;
-}
-.img__bloc:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 0.2rem 1rem #FF79DA;
 }
 .img__bloc img {
   width: 100%;
@@ -331,11 +334,20 @@ i.fa-solid.fa-heart:hover {
 .menu__btn {
   display: flex;
   flex-direction: column;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
+  animation: animation 2s;
+}
+@keyframes animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .menu__btn:hover .menu__prix {
   animation: 3s ease-in reverse slidein;
@@ -401,7 +413,7 @@ i.fa-solid.fa-circle-check {
 }
 
 .header__btn--modif {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 0;
 }
 
 /*la note encantée*/
@@ -415,14 +427,14 @@ i.fa-solid.fa-circle-check {
 
 /* creation du loader*/
 .loader {
+  background-color: white;
   background: content-box radial-gradient(#9356dc, #99e2d0);
   border-left: rem solid content-box radial-gradient(#9356dc, #99e2d0);
   border-right: rem solid content-box radial-gradient(#9356dc, #99e2d0);
   border-top: 2rem solid #99e2d0;
   border-bottom: 2rem solid #FF79DA;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  height: 100%;
   margin: auto;
   position: fixed;
   top: 0;

@@ -45,7 +45,7 @@ body {
 .header {
     @include ombre2;
     height: 23rem;
-    
+
 
     .header__titre {
         display: flex;
@@ -55,7 +55,7 @@ body {
         margin-left: 1rem;
         justify-content: space-around;
         padding-top: 2rem;
-        @media (min-width:820px){
+        @media(min-width:820px) {
             width: 100%;
         }
 
@@ -82,7 +82,7 @@ body {
     .btn {
         border: none;
         font-size: 1.24rem;
-        padding: 1rem 1.5rem 1rem 1.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 3rem;
         color: white;
         background: linear-gradient(0deg, ($primaire), $secondaire 90%);
@@ -95,8 +95,8 @@ body {
 .recherche {
     display: flex;
     flex-direction: column;
-    @media (min-width:820px){
-        display:flex;
+    @media(min-width:820px) {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -105,22 +105,22 @@ body {
         margin-left: 1rem;
         font-size: 1.8rem;
         margin-top: 3rem;
-        @media (min-width:820px){
-        display: none;    
+        @media(min-width:820px) {
+            display: none;
         }
-        
+
     }
 }
 
 .recherche__bouton {
     display: flex;
     justify-content: center;
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem;
     border-radius: 1rem;
     background-color: $background3;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    @media (min-width:820px){
+    @media(min-width:820px) {
         width: 100%;
         margin-top: 5rem;
     }
@@ -133,26 +133,25 @@ body {
         background-color: $background3;
         padding: 1.5rem 2rem 1.5rem 0;
         border-radius: 1rem;
-        @include bri2 ;
+        @include bri2;
     }
     > .fa-solid {
         position: relative;
         top: 2rem;
-        left: 2.5rem;
-        :hover{
-            color:$primaire;
+        left:2.5rem;:hover {
+            color: $primaire;
         }
     }
-    .fa-solid.fa-mobile-screen-button{
+    .fa-solid.fa-mobile-screen-button {
         padding-right: 1rem;
     }
-   
+
 }
 
 .number {
     background-color: $primaire;
     border-radius: 3rem;
-    padding: 0.5rem 0.70rem 0.5rem 0.70rem;
+    padding: 0.5rem 0.70rem;
     margin-top: 1.5rem;
     position: absolute;
     transform: translateX(-10.8rem);
@@ -160,7 +159,7 @@ body {
     .fa-solid {
         color: white;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
 }
 .photo {
@@ -170,14 +169,14 @@ body {
     height: 88rem;
     margin-top: 5rem;
     padding-bottom: 3rem;
-    @media (min-width:820px){
+    @media(min-width:820px) {
         width: 50%;
         margin: auto;
     }
 
     h1 {
         margin: 4.5rem 0 0.5rem 1rem;
-        @media (min-width:820px){
+        @media(min-width:820px) {
             display: none;
         }
     }
@@ -190,7 +189,6 @@ body {
     height: 18rem;
     margin: 1rem;
     background-color: white;
-    @include bri;
 
     img {
         width: 100%;
@@ -209,7 +207,7 @@ body {
     &__new {
         position: absolute;
         transform: translate(18rem, -17rem);
-        background-color: $tertiaire ;
+        background-color: $tertiaire;
         font-weight: bold;
         color: darken($tertiaire, 40);
         font-size: small;
@@ -242,7 +240,7 @@ footer {
         color: white;
         list-style: none;
         padding-left: 1rem;
-        @media (min-width:820px){
+        @media(min-width:820px) {
             display: flex;
             justify-content: space-between;
         }
@@ -264,10 +262,10 @@ footer {
         a {
             color: white;
             text-decoration: none;
-            &:hover{
+            &:hover {
                 color: $primaire;
             }
-            
+
         }
 
     }
@@ -294,8 +292,8 @@ i.fa-solid.fa-handshake-angle {
     height: 18rem;
     width: 100%;
     object-fit: cover;
+    
 }
-
 main {
     height: 84rem;
 }
@@ -322,7 +320,7 @@ h3 {
 i.fa-regular.fa-heart {
     font-size: x-large;
 }
- i.fa-solid.fa-heart{
+i.fa-solid.fa-heart {
     cursor: pointer;
     font-size: x-large;
     position: relative;
@@ -333,52 +331,67 @@ i.fa-regular.fa-heart {
     color: transparent;
     opacity: 0;
     transition: all 200ms ease-in-out;
-    &:hover{
+    &:hover {
         opacity: 1;
     }
-    
- }
+
+}
 .menu__btn {
     display: flex;
     flex-direction: column;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
     border-radius: 1rem;
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    &:hover{
-        .menu__prix{
-            animation:3s ease-in reverse slidein;
+    animation: animation 2s;
+    @keyframes animation{
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    &:hover {
+        .menu__prix {
+            animation: 3s ease-in reverse slidein;
         }
         @keyframes slidein {
-            from { transform: scaleX(0.9); }
-            to   { transform: scaleX(1); }
-          }
-
+            from {
+                transform: scaleX(0.9);
+            }
+            to {
+                transform: scaleX(1);
+            }
         }
+
     }
-   
-    h4 {
-        margin: 0;
-        padding: 1rem 0 0 0.6rem;
-    }
+}
+
+h4 {
+    margin: 0;
+    padding: 1rem 0 0 0.6rem;
+}
 
 
-.fa-solid.fa-circle-check{
+.fa-solid.fa-circle-check {
     display: flex;
     background: $tertiaire;
     height: 100%;
-    &:hover{
-        animation:3s ease-in reverse slidein;
+    &:hover {
+        animation: 3s ease-in reverse slidein;
     }
     @keyframes slidein {
-        from { transform: scaleX(0.9); }
-        to   { transform: scaleX(1); }
-      }
-  
-   
-    
-   
+        from {
+            transform: scaleX(0.9);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+
 }
 
 
@@ -399,19 +412,23 @@ i.fa-solid.fa-circle-check {
     font-size: 0.9rem;
     position: relative;
     bottom: 2rem;
-    &:hover{
-        animation:3s ease-in reverse slidein;
+    &:hover {
+        animation: 3s ease-in reverse slidein;
     }
     @keyframes slidein {
-        from { transform: scaleX(0.9); }
-        to   { transform: scaleX(1); }
-      }
-   
+        from {
+            transform: scaleX(0.9);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
 
 }
 
 .header__btn--modif {
-    margin: 3rem 0 0 0;
+    margin: 3rem 0 0;
 }
 
 /*la note encantée*/
@@ -424,15 +441,15 @@ i.fa-solid.fa-circle-check {
 }
 
 /* creation du loader*/
-.loader{
+.loader {
+    background-color: white;
     background: content-box radial-gradient($primaire, $tertiaire);
     border-left: rem solid content-box radial-gradient($primaire, $tertiaire);
     border-right: rem solid content-box radial-gradient($primaire, $tertiaire);
-    border-top: 2rem solid $tertiaire ;
+    border-top: 2rem solid $tertiaire;
     border-bottom: 2rem solid $secondaire;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    height: 100%;
     margin: auto;
     position: fixed;
     top: 0;
@@ -443,13 +460,13 @@ i.fa-solid.fa-circle-check {
     opacity: 0;
 }
 @keyframes spin {
-    0%{
-        transform: rotate(0deg);       
-    }   
-    90%{
-        opacity: 1;        
+    0% {
+        transform: rotate(0deg);
     }
-    100%{
-        transform: rotate(360deg);      
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-    }
