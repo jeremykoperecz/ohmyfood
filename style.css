@@ -305,12 +305,14 @@ h3 {
   position: relative;
   top: -4.5rem;
 }
-.menu__fr h1 {
+
+h1 {
   padding: 1.5rem 0 0 2rem;
   font-family: "Shrikhand", cursive;
   margin-bottom: 0;
 }
-.menu__fr i.fa-regular.fa-heart {
+
+i.fa-regular.fa-heart {
   position: relative;
   top: -2.3rem;
   left: 22rem;
