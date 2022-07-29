@@ -202,19 +202,8 @@ body {
     &__coeur {
         position: relative;
         transform: translate(20rem, -3.8rem);
-        width: 0.1rem;
-    }
+        width: 1.5rem;
 
-    i.fa-regular.fa-heart {
-        font-size: 1.6rem;
-        cursor: pointer;
-        transform: scale(1);
-        transition: transform 1s;
-
-        &:hover {
-            transform: scale(1.2);
-
-        }
     }
 
     &__new {
@@ -331,10 +320,13 @@ h3 {
 }
 
 i.fa-regular.fa-heart {
-    transform: translate(22rem, -2.2rem);
     font-size: x-large;
 }
-
+ i.fa-solid.fa-heart{
+    font-size: x-large;
+    position: relative;
+    top: -1.5rem;
+ }
 .menu__btn {
     display: flex;
     flex-direction: column;
@@ -361,15 +353,19 @@ i.fa-regular.fa-heart {
     }
 
 
-.menu__barre {
+.fa-solid.fa-circle-check{
     display: flex;
     background: $tertiaire;
     height: 100%;
-   
-  
-     &:hover{
-    display: flex;
+    &:hover{
+        animation:3s ease-in reverse slidein;
     }
+    @keyframes slidein {
+        from { transform: scaleX(0.9); }
+        to   { transform: scaleX(1); }
+      }
+  
+   
     
    
 }

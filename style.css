@@ -206,16 +206,7 @@ body {
 .img__bloc__coeur {
   position: relative;
   transform: translate(20rem, -3.8rem);
-  width: 0.1rem;
-}
-.img__bloc i.fa-regular.fa-heart {
-  font-size: 1.6rem;
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 1s;
-}
-.img__bloc i.fa-regular.fa-heart:hover {
-  transform: scale(1.2);
+  width: 1.5rem;
 }
 .img__bloc__new {
   position: absolute;
@@ -318,8 +309,13 @@ h3 {
 }
 
 i.fa-regular.fa-heart {
-  transform: translate(22rem, -2.2rem);
   font-size: x-large;
+}
+
+i.fa-solid.fa-heart {
+  font-size: x-large;
+  position: relative;
+  top: -1.5rem;
 }
 
 .menu__btn {
@@ -348,13 +344,21 @@ h4 {
   padding: 1rem 0 0 0.6rem;
 }
 
-.menu__barre {
+.fa-solid.fa-circle-check {
   display: flex;
   background: #99e2d0;
   height: 100%;
 }
-.menu__barre:hover {
-  display: flex;
+.fa-solid.fa-circle-check:hover {
+  animation: 3s ease-in reverse slidein;
+}
+@keyframes slidein {
+  from {
+    transform: scaleX(0.9);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 i.fa-solid.fa-circle-check {
