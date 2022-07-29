@@ -325,7 +325,12 @@ i.fa-regular.fa-heart {
  i.fa-solid.fa-heart{
     font-size: x-large;
     position: relative;
-    top: -1.5rem;
+    top: -1.6rem;
+    background-image: linear-gradient(0deg, ($primaire), $secondaire 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
  }
 .menu__btn {
     display: flex;
