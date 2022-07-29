@@ -323,6 +323,7 @@ i.fa-regular.fa-heart {
     font-size: x-large;
 }
  i.fa-solid.fa-heart{
+    cursor: pointer;
     font-size: x-large;
     position: relative;
     top: -1.6rem;
@@ -330,6 +331,11 @@ i.fa-regular.fa-heart {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    &:hover{
+        opacity: 1;
+    }
     
  }
 .menu__btn {
