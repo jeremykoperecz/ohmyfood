@@ -423,33 +423,36 @@ i.fa-solid.fa-heart {
 
     /* creation du loader*/
     .loader {
-        background-color: white;
-        background: content-box radial-gradient($primaire, $tertiaire);
-        border-left: rem solid content-box radial-gradient($primaire, $tertiaire);
-        border-right: rem solid content-box radial-gradient($primaire, $tertiaire);
-        border-top: 2rem solid $tertiaire;
-        border-bottom: 2rem solid $secondaire;
-        border-radius: 50%;
-        height: 3rem;
-        width: 3rem;
-        margin: auto;
+        background-color: $primaire;
+        opacity:0.7;
+        height: 100%;
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        animation: spin 3s linear;
-        opacity: 0;
+        inset: 0;
+        z-index: 1;
+        animation: fondu 2s forwards 1s;
+        transform-origin: bottom;
+        img{
+            padding: 2rem;
+            margin: 30rem 0 30rem 45rem;
+            background: $tertiaire;
+            border-radius: 1rem; 
+            animation: spin 3s linear infinite;
+            @keyframes spin {
+                from{
+                    transform: rotate(-360deg);
+                }
+                to{
+                    transform: rotate(0);
+                }
+            }
+        }
     }
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
+    @keyframes fondu  {
+        from{
+            transform: scale(1);
         }
-        90% {
-            opacity: 1;
-        }
-        100% {
-            transform: rotate(360deg);
+        to {
+            transform: scale(0);
         }
     }
 
