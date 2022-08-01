@@ -306,10 +306,9 @@ h3 {
 .menu__fr {
     background-color: $background3;
     border-radius: 3rem 3rem 0 0;
-    height: 89rem;
+    height: 88.5rem;
     position: relative;
     top: -4.5rem;
-  
     }
     h1 {
         padding: 1.5rem 0 0 2rem;
@@ -322,7 +321,7 @@ h3 {
         left: 22rem;
 
     }
-
+    
 
 i.fa-regular.fa-heart {
     font-size: x-large;
@@ -361,14 +360,22 @@ i.fa-solid.fa-heart {
 }   
         @keyframes rotate {
             0%{
-                transform: rotate(-270deg);
+                transform: rotate(-360deg);
             }
             100%{
                 transform: rotate(0);
             }
         }
     }
-    
+    .__miam{
+        overflow: hidden;
+        white-space: nowrap;
+        
+    }
+    p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
    
 
     h4 {

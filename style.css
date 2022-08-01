@@ -301,7 +301,7 @@ h3 {
 .menu__fr {
   background-color: #f7f7f7;
   border-radius: 3rem 3rem 0 0;
-  height: 89rem;
+  height: 88.5rem;
   position: relative;
   top: -4.5rem;
 }
@@ -358,11 +358,19 @@ i.fa-solid.fa-heart:hover {
 }
 @keyframes rotate {
   0% {
-    transform: rotate(-270deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0);
   }
+}
+.menu__btn .__miam {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__btn p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__btn h4 {
   margin: 0;
