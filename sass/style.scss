@@ -315,12 +315,7 @@ h3 {
         @include police2;
         margin-bottom: 0;
     }
-    i.fa-regular.fa-heart{
-        position: relative;
-        top: -2.3rem;
-        left: 22rem;
-
-    }
+    
     
 
 i.fa-regular.fa-heart {
@@ -341,6 +336,14 @@ i.fa-solid.fa-heart {
         opacity: 1;
     }
 
+}
+.menu__miam{
+    overflow: hidden;
+    white-space: nowrap;
+     p{
+     text-overflow: ellipsis;
+    overflow: hidden;
+    }
 }
 .menu__btn {
     display: flex;
@@ -367,16 +370,8 @@ i.fa-solid.fa-heart {
             }
         }
     }
-    .__miam{
-        overflow: hidden;
-        white-space: nowrap;
-        
-    }
-    p{
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-   
+}
+
 
     h4 {
         margin: 0;
@@ -435,7 +430,8 @@ i.fa-solid.fa-heart {
         border-top: 2rem solid $tertiaire;
         border-bottom: 2rem solid $secondaire;
         border-radius: 50%;
-        height: 100%;
+        height: 3rem;
+        width: 3rem;
         margin: auto;
         position: fixed;
         top: 0;
@@ -456,7 +452,7 @@ i.fa-solid.fa-heart {
             transform: rotate(360deg);
         }
     }
-}
+
 
 
     
