@@ -351,43 +351,43 @@ i.fa-solid.fa-heart {
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
-    animation: animation 2s ease-in-out ;
-    transform-origin: left;
-    @keyframes animation{
-        0%{
-            transform: scale(0);
-        }
-        100%{
-            transform: scale(1);
-        }
-    
-    }
+    overflow: hidden;
     &:hover {
         .menu__prix {
-            animation: 3s ease-in reverse slidein;
+        margin-right: 0;
         }
-        @keyframes slidein {
-            from {
-                transform: scaleX(0.9);
+        i {
+            animation: rotate 0.5s both;
+}   
+        @keyframes rotate {
+            0%{
+                transform: rotate(-270deg);
             }
-            to {
-                transform: scaleX(1);
+            100%{
+                transform: rotate(0);
             }
         }
-
     }
-
+    
+   
 
     h4 {
         margin: 0;
         padding: 1rem 0 0 0.6rem;
     }
-}
+
 .menu__barre{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: $tertiaire;
-
+    border-radius: 0 1rem 1rem 0;
+    width: 4rem;
+    i{
+        color: white;
+        font-size: 2rem;
+    }
+    
 }
 
 
@@ -396,14 +396,13 @@ i.fa-solid.fa-heart {
 
 .menu__prix {
     display: flex;
+    margin-right: -4rem;
+    transition: all 0.5s;
     p{
         display: flex;
         align-items:flex-end ;
     }
-    .__barre{
-        display: flex;
-        align-items: center;
-    }
+
 
     }
 
@@ -450,7 +449,7 @@ i.fa-solid.fa-heart {
             transform: rotate(360deg);
         }
     }
-
+}
 
 
     

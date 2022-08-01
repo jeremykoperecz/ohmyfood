@@ -346,66 +346,59 @@ i.fa-solid.fa-heart:hover {
   background-color: white;
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
-  animation: animation 2s ease-in-out;
-  transform-origin: left;
-}
-@keyframes animation {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+  overflow: hidden;
+  /*la note encantée*/
+  /* creation du loader*/
 }
 .menu__btn:hover .menu__prix {
-  animation: 3s ease-in reverse slidein;
+  margin-right: 0;
 }
-@keyframes slidein {
-  from {
-    transform: scaleX(0.9);
+.menu__btn:hover i {
+  animation: rotate 0.5s both;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-270deg);
   }
-  to {
-    transform: scaleX(1);
+  100% {
+    transform: rotate(0);
   }
 }
 .menu__btn h4 {
   margin: 0;
   padding: 1rem 0 0 0.6rem;
 }
-
-.menu__barre {
+.menu__btn .menu__barre {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  width: 4rem;
 }
-
-.menu__prix {
+.menu__btn .menu__barre i {
+  color: white;
+  font-size: 2rem;
+}
+.menu__btn .menu__prix {
   display: flex;
+  margin-right: -4rem;
+  transition: all 0.5s;
 }
-.menu__prix p {
+.menu__btn .menu__prix p {
   display: flex;
   align-items: flex-end;
 }
-.menu__prix .__barre {
-  display: flex;
-  align-items: center;
-}
-
-.header__btn--modif {
+.menu__btn .header__btn--modif {
   margin: 3rem 0 0;
 }
-
-/*la note encantée*/
-.main2 {
+.menu__btn .main2 {
   height: 89rem;
 }
-
-.menu__fr--mod {
+.menu__btn .menu__fr--mod {
   height: 94.5rem;
 }
-
-/* creation du loader*/
-.loader {
+.menu__btn .loader {
   background-color: white;
   background: content-box radial-gradient(#9356dc, #99e2d0);
   border-left: rem solid content-box radial-gradient(#9356dc, #99e2d0);
@@ -423,7 +416,6 @@ i.fa-solid.fa-heart:hover {
   animation: spin 3s linear;
   opacity: 0;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
