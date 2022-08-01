@@ -345,7 +345,7 @@ i.fa-solid.fa-heart {
 }
 .menu__btn {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin: 1rem;
     border-radius: 1rem;
     background-color: white;
@@ -382,57 +382,28 @@ i.fa-solid.fa-heart {
         margin: 0;
         padding: 1rem 0 0 0.6rem;
     }
+}
+.menu__barre{
+    display: flex;
+    align-items: center;
+    background-color: $tertiaire;
+
+}
 
 
-    .fa-solid.fa-circle-check {
+  
+
+
+.menu__prix {
+    display: flex;
+    p{
         display: flex;
-        background: $tertiaire;
-        height: 100%;
-        &:hover {
-            animation: 3s ease-in reverse slidein;
-        }
-        @keyframes slidein {
-            from {
-                transform: scaleX(0.9);
-            }
-            to {
-                transform: scaleX(1);
-            }
-        }
-
-
+        align-items:flex-end ;
     }
-
-
-    i.fa-solid.fa-circle-check {
-        display: none;
-        justify-content: flex-end;
-        position: relative;
-        top: -2.2rem;
-        font-size: 2rem;
-        color: $tertiaire;
-        padding-right: 1rem;
-    }
-
-
-    .menu__prix {
+    .__barre{
         display: flex;
-        justify-content: flex-end;
-        font-size: 0.9rem;
-        position: relative;
-        bottom: 2rem;
-        &:hover {
-            animation: 3s ease-in reverse slidein;
-        }
-        @keyframes slidein {
-            from {
-                transform: scaleX(0.9);
-            }
-            to {
-                transform: scaleX(1);
-            }
-        }
-
+        align-items: center;
+    }
 
     }
 
@@ -479,7 +450,7 @@ i.fa-solid.fa-heart {
             transform: rotate(360deg);
         }
     }
-}
+
 
 
     

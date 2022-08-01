@@ -340,7 +340,7 @@ i.fa-solid.fa-heart:hover {
 
 .menu__btn {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin: 1rem;
   border-radius: 1rem;
   background-color: white;
@@ -348,8 +348,6 @@ i.fa-solid.fa-heart:hover {
   height: 5rem;
   animation: animation 2s ease-in-out;
   transform-origin: left;
-  /*la note encantée*/
-  /* creation du loader*/
 }
 @keyframes animation {
   0% {
@@ -374,59 +372,40 @@ i.fa-solid.fa-heart:hover {
   margin: 0;
   padding: 1rem 0 0 0.6rem;
 }
-.menu__btn .fa-solid.fa-circle-check {
+
+.menu__barre {
   display: flex;
-  background: #99e2d0;
-  height: 100%;
+  align-items: center;
+  background-color: #99e2d0;
 }
-.menu__btn .fa-solid.fa-circle-check:hover {
-  animation: 3s ease-in reverse slidein;
-}
-@keyframes slidein {
-  from {
-    transform: scaleX(0.9);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-.menu__btn i.fa-solid.fa-circle-check {
-  display: none;
-  justify-content: flex-end;
-  position: relative;
-  top: -2.2rem;
-  font-size: 2rem;
-  color: #99e2d0;
-  padding-right: 1rem;
-}
-.menu__btn .menu__prix {
+
+.menu__prix {
   display: flex;
-  justify-content: flex-end;
-  font-size: 0.9rem;
-  position: relative;
-  bottom: 2rem;
 }
-.menu__btn .menu__prix:hover {
-  animation: 3s ease-in reverse slidein;
+.menu__prix p {
+  display: flex;
+  align-items: flex-end;
 }
-@keyframes slidein {
-  from {
-    transform: scaleX(0.9);
-  }
-  to {
-    transform: scaleX(1);
-  }
+.menu__prix .__barre {
+  display: flex;
+  align-items: center;
 }
-.menu__btn .header__btn--modif {
+
+.header__btn--modif {
   margin: 3rem 0 0;
 }
-.menu__btn .main2 {
+
+/*la note encantée*/
+.main2 {
   height: 89rem;
 }
-.menu__btn .menu__fr--mod {
+
+.menu__fr--mod {
   height: 94.5rem;
 }
-.menu__btn .loader {
+
+/* creation du loader*/
+.loader {
   background-color: white;
   background: content-box radial-gradient(#9356dc, #99e2d0);
   border-left: rem solid content-box radial-gradient(#9356dc, #99e2d0);
@@ -444,6 +423,7 @@ i.fa-solid.fa-heart:hover {
   animation: spin 3s linear;
   opacity: 0;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
