@@ -295,7 +295,16 @@ main {
 
 h3 {
   padding: 2.5rem 0 0.5rem 2rem;
-  border-bottom: 0.2rem solid #99e2d0;
+  position: relative;
+}
+h3::after {
+  content: "";
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 4.2rem;
+  left: 2rem;
 }
 
 .menu__fr {
@@ -305,11 +314,14 @@ h3 {
   position: relative;
   top: -4.5rem;
 }
-
-h1 {
+.menu__fr h1 {
   padding: 1.5rem 0 0 2rem;
   font-family: "Shrikhand", cursive;
   margin-bottom: 0;
+}
+.menu__fr i.fa-regular.fa-heart {
+  position: relative;
+  inset: -2.2rem 2rem 5rem 22.5rem;
 }
 
 i.fa-regular.fa-heart {
@@ -350,6 +362,22 @@ i.fa-solid.fa-heart:hover {
   box-shadow: 0.2rem 0.2rem 0.5rem #eaeaea;
   height: 5rem;
   overflow: hidden;
+  animation: slide 2s ease-in-out;
+  transform-origin: left;
+  animation-fill-mode: both;
+  /*la note encantée*/
+  /* creation du loader*/
+}
+.menu__btn:nth-child(1) {
+  animation-delay: 100ms;
+}
+@keyframes slide {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .menu__btn:hover .menu__prix {
   margin-right: 0;
@@ -365,13 +393,61 @@ i.fa-solid.fa-heart:hover {
     transform: rotate(0);
   }
 }
-
-h4 {
+.menu__btn:nth-child(2) {
+  animation-delay: 200ms;
+}
+@keyframes slide {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.menu__btn:hover .menu__prix {
+  margin-right: 0;
+}
+.menu__btn:hover i {
+  animation: rotate 0.5s both;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.menu__btn:nth-child(3) {
+  animation-delay: 300ms;
+}
+@keyframes slide {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.menu__btn:hover .menu__prix {
+  margin-right: 0;
+}
+.menu__btn:hover i {
+  animation: rotate 0.5s both;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.menu__btn h4 {
   margin: 0;
   padding: 1rem 0 0 0.6rem;
 }
-
-.menu__barre {
+.menu__btn .menu__barre {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,36 +455,29 @@ h4 {
   border-radius: 0 1rem 1rem 0;
   width: 4rem;
 }
-.menu__barre i {
+.menu__btn .menu__barre i {
   color: white;
   font-size: 2rem;
 }
-
-.menu__prix {
+.menu__btn .menu__prix {
   display: flex;
   margin-right: -4rem;
   transition: all 0.5s;
 }
-.menu__prix p {
+.menu__btn .menu__prix p {
   display: flex;
   align-items: flex-end;
 }
-
-.header__btn--modif {
+.menu__btn .header__btn--modif {
   margin: 3rem 0 0;
 }
-
-/*la note encantée*/
-.main2 {
+.menu__btn .main2 {
   height: 89rem;
 }
-
-.menu__fr--mod {
+.menu__btn .menu__fr--mod {
   height: 94.5rem;
 }
-
-/* creation du loader*/
-.loader {
+.menu__btn .loader {
   background-color: #9356dc;
   opacity: 0.7;
   height: 100%;
@@ -418,7 +487,7 @@ h4 {
   animation: fondu 2s forwards 1s;
   transform-origin: bottom;
 }
-.loader img {
+.menu__btn .loader img {
   padding: 2rem;
   margin: 30rem 0 30rem 45rem;
   background: #99e2d0;
@@ -433,7 +502,6 @@ h4 {
     transform: rotate(0);
   }
 }
-
 @keyframes fondu {
   from {
     transform: scale(1);

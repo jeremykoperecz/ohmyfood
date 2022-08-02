@@ -300,7 +300,18 @@ main {
 
 h3 {
     padding: 2.5rem 0 0.5rem 2rem;
-    border-bottom: 0.2rem solid $tertiaire;
+    position: relative;
+    &::after {
+        content: "";
+        height: 0.25rem;
+        width: 3rem;
+        background-color: $tertiaire;
+        position: absolute;
+        top: 4.2rem;
+        left: 2rem;
+
+
+    }
 }
 
 .menu__fr {
@@ -309,17 +320,23 @@ h3 {
     height: 88.5rem;
     position: relative;
     top: -4.5rem;
-    }
+
+
     h1 {
         padding: 1.5rem 0 0 2rem;
         @include police2;
         margin-bottom: 0;
     }
-    
-    
+    i.fa-regular.fa-heart {
+        position: relative;
+        inset: -2.2rem 2rem 5rem 22.5rem;
+    }
+}
+
 
 i.fa-regular.fa-heart {
     font-size: x-large;
+
 }
 i.fa-solid.fa-heart {
     cursor: pointer;
@@ -337,12 +354,12 @@ i.fa-solid.fa-heart {
     }
 
 }
-.menu__miam{
+.menu__miam {
     overflow: hidden;
     white-space: nowrap;
-     p{
-     text-overflow: ellipsis;
-    overflow: hidden;
+    p {
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 .menu__btn {
@@ -354,23 +371,39 @@ i.fa-solid.fa-heart {
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
     height: 5rem;
     overflow: hidden;
-    &:hover {
-        .menu__prix {
-        margin-right: 0;
+    animation: slide 2s ease-in-out;
+    transform-origin: left;
+    animation-fill-mode: both;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
         }
-        i {
-            animation: rotate 0.5s both;
-}   
-        @keyframes rotate {
-            0%{
-                transform: rotate(-360deg);
+        @keyframes slide {
+            from {
+                transform: scale(0);
             }
-            100%{
-                transform: rotate(0);
+            to {
+                transform: scale(1);
+            }
+
+        }
+        &:hover {
+            .menu__prix {
+                margin-right: 0;
+            }
+            i {
+                animation: rotate 0.5s both;
+            }
+            @keyframes rotate {
+                0% {
+                    transform: rotate(-360deg);
+                }
+                100% {
+                    transform: rotate(0);
+                }
             }
         }
     }
-}
 
 
     h4 {
@@ -378,32 +411,29 @@ i.fa-solid.fa-heart {
         padding: 1rem 0 0 0.6rem;
     }
 
-.menu__barre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $tertiaire;
-    border-radius: 0 1rem 1rem 0;
-    width: 4rem;
-    i{
-        color: white;
-        font-size: 2rem;
-    }
-    
-}
-
-
-  
-
-
-.menu__prix {
-    display: flex;
-    margin-right: -4rem;
-    transition: all 0.5s;
-    p{
+    .menu__barre {
         display: flex;
-        align-items:flex-end ;
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiaire;
+        border-radius: 0 1rem 1rem 0;
+        width: 4rem;
+        i {
+            color: white;
+            font-size: 2rem;
+        }
+
     }
+
+
+    .menu__prix {
+        display: flex;
+        margin-right: -4rem;
+        transition: all 0.5s;
+        p {
+            display: flex;
+            align-items: flex-end;
+        }
 
 
     }
@@ -424,31 +454,31 @@ i.fa-solid.fa-heart {
     /* creation du loader*/
     .loader {
         background-color: $primaire;
-        opacity:0.7;
+        opacity: 0.7;
         height: 100%;
         position: fixed;
         inset: 0;
         z-index: 1;
         animation: fondu 2s forwards 1s;
         transform-origin: bottom;
-        img{
+        img {
             padding: 2rem;
             margin: 30rem 0 30rem 45rem;
             background: $tertiaire;
-            border-radius: 1rem; 
+            border-radius: 1rem;
             animation: spin 3s linear infinite;
             @keyframes spin {
-                from{
+                from {
                     transform: rotate(-360deg);
                 }
-                to{
+                to {
                     transform: rotate(0);
                 }
             }
         }
     }
-    @keyframes fondu  {
-        from{
+    @keyframes fondu {
+        from {
             transform: scale(1);
         }
         to {
@@ -456,7 +486,4 @@ i.fa-solid.fa-heart {
         }
     }
 
-
-
-    
-   
+}
