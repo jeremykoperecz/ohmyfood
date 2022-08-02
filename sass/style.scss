@@ -294,12 +294,12 @@ i.fa-solid.fa-handshake-angle {
     object-fit: cover;
 
 }
-.main--modif{
+.main--modif {
     height: 88rem;
 }
 main {
     height: 84rem;
-   
+
 }
 
 h3 {
@@ -328,8 +328,6 @@ h3 {
         height: 92.5rem;
     }
 
-    
-
 
     h1 {
         padding: 1.5rem 0 0 2rem;
@@ -339,7 +337,7 @@ h3 {
     i.fa-regular.fa-heart {
         position: relative;
         inset: -2.2rem 2rem 5rem 22.5rem;
-       
+
     }
     i.fa-solid.fa-heart {
         cursor: pointer;
@@ -351,21 +349,21 @@ h3 {
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
-        transition: all 200ms ease-in-out ;
+        transition: all 200ms ease-in-out;
         &:hover {
             opacity: 1;
-            animation: scal 0.5s ease-in-out ;
+            animation: scal 0.5s ease-in-out;
             @keyframes scal {
-                from{
+                from {
                     transform: scale(0);
                 }
-                to{
+                to {
                     transform: scale(1.8);
                 }
-                
+
             }
         }
-    
+
     }
 
 }
@@ -479,11 +477,7 @@ i.fa-solid.fa-heart {
         margin: 3rem 0 0;
     }
 
-   
-   
 
-    
-    
     /* creation du loader*/
     .loader {
         background-color: $primaire;
@@ -506,6 +500,7 @@ i.fa-solid.fa-heart {
                 }
                 to {
                     transform: rotate(0);
+
                 }
             }
         }
