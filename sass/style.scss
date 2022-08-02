@@ -100,6 +100,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
+    
 
     & h1 {
         margin-left: 1rem;
@@ -111,7 +112,11 @@ body {
 
     }
 }
+.recherche__txt{
+  font-size: larger;
+        font-weight: 900;
 
+}
 .recherche__bouton {
     display: flex;
     justify-content: center;
@@ -119,48 +124,40 @@ body {
     border-radius: 1rem;
     background-color: $background3;
     box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
-    height: 5rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: flex-start;
+    @include bri2 ;
     @media(min-width:820px) {
         width: 100%;
         margin-top: 5rem;
     }
-
-    > .btn {
-        cursor: pointer;
-        width: 100%;
-        font-size: large;
-        border: none;
-        background-color: $background3;
-        padding: 1.5rem 2rem 1.5rem 0;
-        border-radius: 1rem;
-        @include bri2;
-    }
-    > .fa-solid {
-        position: relative;
-        top: 2rem;
-        left:2.5rem;:hover {
-            color: $primaire;
+   
+    .fa-solid {
+        display: flex;
+        align-items: center;
+           
         }
     }
     .fa-solid.fa-mobile-screen-button {
         padding-right: 1rem;
     }
 
-}
+
 
 .number {
+    display: flex;
+    align-items: center;
     background-color: $primaire;
     border-radius: 3rem;
-    padding: 0.5rem 0.70rem;
-    margin-top: 1.5rem;
-    position: absolute;
-    transform: translateX(-10.8rem);
-
-    .fa-solid {
-        color: white;
-        margin: 0;
-        padding: 0;
+    height: 2rem;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: white;
+    p{
+        padding-bottom: 0.3rem;
     }
+  
 }
 .photo {
     display: flex;
