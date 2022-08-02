@@ -76,7 +76,7 @@ body {
 .header__btn {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   margin-bottom: 7rem;
 }
 .header__btn .btn {
@@ -289,6 +289,10 @@ i.fa-solid.fa-handshake-angle {
   object-fit: cover;
 }
 
+.main--modif {
+  height: 88rem;
+}
+
 main {
   height: 84rem;
 }
@@ -314,6 +318,9 @@ h3::after {
   position: relative;
   top: -4.5rem;
 }
+.menu__fr--mod {
+  height: 92.5rem;
+}
 .menu__fr h1 {
   padding: 1.5rem 0 0 2rem;
   font-family: "Shrikhand", cursive;
@@ -322,6 +329,30 @@ h3::after {
 .menu__fr i.fa-regular.fa-heart {
   position: relative;
   inset: -2.2rem 2rem 5rem 22.5rem;
+}
+.menu__fr i.fa-solid.fa-heart {
+  cursor: pointer;
+  font-size: x-large;
+  position: relative;
+  inset: -2.2rem 2rem 5rem 20.75rem;
+  background-image: linear-gradient(0deg, #9356dc, #FF79DA 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.menu__fr i.fa-solid.fa-heart:hover {
+  opacity: 1;
+  animation: scal 0.5s ease-in-out;
+}
+@keyframes scal {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.8);
+  }
 }
 
 i.fa-regular.fa-heart {
@@ -342,6 +373,7 @@ i.fa-solid.fa-heart {
 }
 i.fa-solid.fa-heart:hover {
   opacity: 1;
+  animation: scal 0.5s ease-in-out;
 }
 
 .menu__miam {
@@ -365,7 +397,6 @@ i.fa-solid.fa-heart:hover {
   animation: slide 2s ease-in-out;
   transform-origin: left;
   animation-fill-mode: both;
-  /*la note encantée*/
   /* creation du loader*/
 }
 .menu__btn:nth-child(1) {
@@ -443,6 +474,31 @@ i.fa-solid.fa-heart:hover {
     transform: rotate(0);
   }
 }
+.menu__btn:nth-child(4) {
+  animation-delay: 400ms;
+}
+@keyframes slide {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.menu__btn:hover .menu__prix {
+  margin-right: 0;
+}
+.menu__btn:hover i {
+  animation: rotate 0.5s both;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .menu__btn h4 {
   margin: 0;
   padding: 1rem 0 0 0.6rem;
@@ -470,12 +526,6 @@ i.fa-solid.fa-heart:hover {
 }
 .menu__btn .header__btn--modif {
   margin: 3rem 0 0;
-}
-.menu__btn .main2 {
-  height: 89rem;
-}
-.menu__btn .menu__fr--mod {
-  height: 94.5rem;
 }
 .menu__btn .loader {
   background-color: #9356dc;
