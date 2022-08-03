@@ -130,9 +130,19 @@ body {
 .recherche__txt {
   display: flex;
 }
+@media (min-width: 820px) {
+  .recherche__txt {
+    margin: 1rem;
+  }
+}
 .recherche__txt2 {
   font-size: larger;
   font-weight: 900;
+}
+@media (min-width: 820px) {
+  .recherche__txt2 {
+    margin: 3rem;
+  }
 }
 .recherche__bouton {
   display: flex;
@@ -195,7 +205,7 @@ body {
     border-radius: 2rem;
     height: auto;
     padding: 2rem;
-    background: linear-gradient(0deg, #9356dc, #FF79DA 90%);
+    background: linear-gradient(0deg, #bc95e9, #ffc6ef 90%);
   }
 }
 .photo h1 {
@@ -359,11 +369,15 @@ h3::after {
   font-family: "Shrikhand", cursive;
   margin-bottom: 0;
 }
+.menu__fr i.fa-regular.fa-heart {
+  position: absolute;
+  inset: 2.3rem 22rem;
+}
 .menu__fr i.fa-solid.fa-heart {
   cursor: pointer;
   font-size: x-large;
-  position: absolute;
-  left: 0;
+  position: relative;
+  inset: -2.2rem 22rem;
   background-image: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   background-clip: text;
   -webkit-background-clip: text;

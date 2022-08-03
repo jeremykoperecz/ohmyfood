@@ -120,10 +120,17 @@ body {
     }
     &__txt {
         display: flex;
+        @media(min-width:820px){
+            margin: 1rem;
+        }
     }
     &__txt2 {
         font-size: larger;
         font-weight: 900;
+        @media(min-width:820px){
+            margin: 3rem;
+        }
+        
     }
     &__bouton {
         display: flex;
@@ -188,7 +195,8 @@ body {
         border-radius: 2rem;
         height: auto;
         padding: 2rem;
-        background: linear-gradient(0deg, ($primaire), $secondaire 90%);
+        background: linear-gradient(0deg, (lighten($primaire, 15)), (lighten($secondaire,15)) 90%);
+        
         
     }
 
@@ -368,12 +376,16 @@ h3 {
         @include police2;
         margin-bottom: 0;
     }
+    i.fa-regular.fa-heart{
+        position: absolute;
+        inset: 2.3rem 22rem;
+    }
     
     i.fa-solid.fa-heart {
         cursor: pointer;
         font-size: x-large;
-        position: absolute;
-        left: 0;
+        position: relative;
+        inset: -2.2rem 22rem;
         background-image: linear-gradient(0deg, ($primaire), $secondaire 90%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -400,6 +412,7 @@ h3 {
 
 i.fa-regular.fa-heart {
     font-size: x-large;
+   
 
 }
 i.fa-solid.fa-heart {
