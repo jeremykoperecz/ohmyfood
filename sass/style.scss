@@ -100,7 +100,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
 
     & h1 {
         margin-left: 1rem;
@@ -111,37 +111,43 @@ body {
         }
 
     }
-}
-.recherche__txt{
-  font-size: larger;
+    &__txt {
+        display: flex;
+    }
+    &__txt2 {
+        font-size: larger;
         font-weight: 900;
-
-}
-.recherche__bouton {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 2rem;
-    border-radius: 1rem;
-    background-color: $background3;
-    box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
-    height: 4rem;
-    align-items: center;
-    justify-content: flex-start;
-    @include bri2 ;
-    @media(min-width:820px) {
+    }
+    &__bouton {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 2rem;
+        border-radius: 1rem;
+        background-color: $background3;
+        box-shadow: 0.2rem 0.2rem 0.5rem darken($background2, 7);
+        height: 4rem;
+        align-items: center;
+        justify-content: flex-start;
+        transition: background-color 0.3s, box-shadow 0.4s;
+        @media(min-width:820px) {
         width: 100%;
         margin-top: 5rem;
-    }
-   
-    .fa-solid {
-        display: flex;
-        align-items: center;
-           
         }
-    }
-    .fa-solid.fa-mobile-screen-button {
-        padding-right: 1rem;
-    }
+        &:hover{
+            background-color: lighten($primaire, 36);  
+            i{
+                color: $primaire;
+            }     
+        }
+
+}
+       
+
+        .fa-solid {
+            display: flex;
+            align-items: center;
+        }
+}
 
 
 
@@ -154,10 +160,10 @@ body {
     transform: translateX(-50%);
     font-size: 1.4rem;
     color: white;
-    p{
+    p {
         padding-bottom: 0.3rem;
     }
-  
+
 }
 .photo {
     display: flex;
@@ -438,78 +444,75 @@ i.fa-solid.fa-heart {
     }
 }
 
-    h4 {
-        margin: 0;
-        padding: 1rem 0 0 0.6rem;
+h4 {
+    margin: 0;
+    padding: 1rem 0 0 0.6rem;
+}
+
+.menu__barre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $tertiaire;
+    border-radius: 0 1rem 1rem 0;
+    width: 4rem;
+    i {
+        color: white;
+        font-size: 2rem;
     }
 
-    .menu__barre {
+}
+
+
+.menu__prix {
+    display: flex;
+    margin-right: -4rem;
+    transition: all 0.5s;
+    p {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $tertiaire;
-        border-radius: 0 1rem 1rem 0;
-        width: 4rem;
-        i {
-            color: white;
-            font-size: 2rem;
-        }
-
+        align-items: flex-end;
     }
 
 
-    .menu__prix {
-        display: flex;
-        margin-right: -4rem;
-        transition: all 0.5s;
-        p {
-            display: flex;
-            align-items: flex-end;
-        }
+}
+
+.header__btn--modif {
+    margin: 3rem 0 0;
+}
 
 
-    }
+/* creation du loader*/
+.loader {
+    background-color: $primaire;
+    opacity: 0.7;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    animation: fondu 2s forwards 1s;
+    transform-origin: bottom;
+    img {
+        padding: 2rem;
+        margin: 30rem 0 30rem 45rem;
+        background: $tertiaire;
+        border-radius: 1rem;
+        animation: spin 3s linear infinite;
+        @keyframes spin {
+            from {
+                transform: rotate(-360deg);
+            }
+            to {
+                transform: rotate(0);
 
-    .header__btn--modif {
-        margin: 3rem 0 0;
-    }
-
-
-    /* creation du loader*/
-    .loader {
-        background-color: $primaire;
-        opacity: 0.7;
-        height: 100%;
-        position: fixed;
-        inset: 0;
-        z-index: 1;
-        animation: fondu 2s forwards 1s;
-        transform-origin: bottom;
-        img {
-            padding: 2rem;
-            margin: 30rem 0 30rem 45rem;
-            background: $tertiaire;
-            border-radius: 1rem;
-            animation: spin 3s linear infinite;
-            @keyframes spin {
-                from {
-                    transform: rotate(-360deg);
-                }
-                to {
-                    transform: rotate(0);
-
-                }
             }
         }
     }
-    @keyframes fondu {
-        from {
-            transform: scale(1);
-        }
-        to {
-            transform: scale(0);
-        }
+}
+@keyframes fondu {
+    from {
+        transform: scale(1);
     }
-
-
-
+    to {
+        transform: scale(0);
+    }
+}
