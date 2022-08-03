@@ -15,6 +15,11 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+@media (min-width: 820px) {
+  body {
+    height: 70rem;
+  }
+}
 
 .logo {
   display: flex;
@@ -49,6 +54,11 @@ body {
   background: linear-gradient(0deg, #f4f4f4 20%, rgb(252, 252, 252));
   height: 23rem;
 }
+@media (min-width: 820px) {
+  .header {
+    height: 20rem;
+  }
+}
 .header .header__titre {
   display: flex;
   flex-direction: column;
@@ -60,7 +70,7 @@ body {
 }
 @media (min-width: 820px) {
   .header .header__titre {
-    width: 100%;
+    margin: auto;
   }
 }
 .header .header__titre h1 {
@@ -102,7 +112,9 @@ body {
   .recherche {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding-bottom: 3rem;
+    width: 90%;
+    margin-left: 6rem;
   }
 }
 .recherche h1 {
@@ -175,8 +187,15 @@ body {
 }
 @media (min-width: 820px) {
   .photo {
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
     margin: auto;
+    justify-content: space-between;
+    border-radius: 2rem;
+    height: auto;
+    padding: 2rem;
+    background: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   }
 }
 .photo h1 {
@@ -195,6 +214,11 @@ body {
   margin: 1rem;
   background-color: white;
 }
+@media (min-width: 820px) {
+  .img__bloc {
+    width: 25rem;
+  }
+}
 .img__bloc img {
   width: 100%;
   object-fit: cover;
@@ -202,13 +226,12 @@ body {
   height: 72%;
 }
 .img__bloc__coeur {
-  position: relative;
-  transform: translate(20rem, -3.8rem);
+  transform: translate(19rem, -3.8rem);
   width: 1.5rem;
 }
 .img__bloc__new {
   position: absolute;
-  transform: translate(18rem, -17rem);
+  transform: translate(17rem, -17rem);
   background-color: #99e2d0;
   font-weight: bold;
   color: #278870;
@@ -228,6 +251,13 @@ footer {
   background-color: rgb(56, 56, 56);
   height: 13rem;
   cursor: pointer;
+}
+@media (min-width: 820px) {
+  footer {
+    height: 9rem;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 4rem;
+  }
 }
 footer img {
   filter: invert(100%);
@@ -291,6 +321,14 @@ i.fa-solid.fa-handshake-angle {
 main {
   height: 84rem;
 }
+@media (min-width: 820px) {
+  main {
+    background-color: #d5f3eb;
+    height: auto;
+    border-radius: 2rem;
+    transform: translateY(-1.5rem);
+  }
+}
 
 h3 {
   padding: 2.5rem 0 0.5rem 2rem;
@@ -321,21 +359,17 @@ h3::after {
   font-family: "Shrikhand", cursive;
   margin-bottom: 0;
 }
-.menu__fr i.fa-regular.fa-heart {
-  position: relative;
-  inset: -2.2rem 2rem 5rem 22.5rem;
-}
 .menu__fr i.fa-solid.fa-heart {
   cursor: pointer;
   font-size: x-large;
-  position: relative;
-  inset: -2.2rem 2rem 5rem 20.75rem;
+  position: absolute;
+  left: 0;
   background-image: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .menu__fr i.fa-solid.fa-heart:hover {
   opacity: 1;
@@ -534,7 +568,7 @@ h4 {
   position: fixed;
   inset: 0;
   z-index: 1;
-  animation: fondu 2s forwards 1s;
+  animation: fondu 400ms forwards 1.5s;
   transform-origin: bottom;
 }
 .loader img {
