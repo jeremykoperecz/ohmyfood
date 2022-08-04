@@ -104,8 +104,7 @@ body {
         display: flex;
         flex-direction: row;
         padding-bottom: 3rem;
-        width: 90%;
-        margin-left: 6rem;
+       
     }
 
 
@@ -133,6 +132,7 @@ body {
         
     }
     &__bouton {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         margin: 1rem 2rem;
@@ -181,6 +181,7 @@ body {
 }
 .photo {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: $background;
     height: 88rem;
@@ -189,7 +190,7 @@ body {
     @media(min-width:820px) {
         display: flex;
         flex-direction: row;
-        width: 85%;
+        width: auto;
         margin: auto;
         justify-content: space-between;
         border-radius: 2rem;
@@ -227,14 +228,15 @@ body {
     }
 
     &__new {
-        position: absolute;
-        transform: translate(17rem, -17rem);
         background-color: $tertiaire;
         font-weight: bold;
         color: darken($tertiaire, 40);
         font-size: small;
         height: 1.7rem;
-
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        transform: translate(16rem, -12rem);
         p {
             margin-top: 0.4rem;
         }
@@ -384,7 +386,7 @@ h3 {
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
-        transition: all 100ms ease-in-out;
+        transition: all 150ms ease-in-out;
         &:hover {
             opacity: 1;
             animation: scal ease-in-out;
@@ -418,7 +420,7 @@ i.fa-solid.fa-heart {
     -webkit-background-clip: text;
     color: transparent;
     opacity: 0;
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
     &:hover {
         opacity: 1; 
     }
