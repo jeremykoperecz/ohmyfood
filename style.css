@@ -235,10 +235,6 @@ body {
   border-radius: 10px 10px 0 0;
   height: 72%;
 }
-.img__bloc__coeur {
-  transform: translate(19rem, -3.8rem);
-  width: 1.5rem;
-}
 .img__bloc__new {
   position: absolute;
   transform: translate(17rem, -17rem);
@@ -370,14 +366,14 @@ h3::after {
   margin-bottom: 0;
 }
 .menu__fr i.fa-regular.fa-heart {
-  position: absolute;
-  inset: 2.3rem 22rem;
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(-1.8rem, -2.1rem);
 }
 .menu__fr i.fa-solid.fa-heart {
+  transform: translate(23.7, -3.6);
   cursor: pointer;
   font-size: x-large;
-  position: relative;
-  inset: -2.2rem 22rem;
   background-image: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -387,32 +383,36 @@ h3::after {
 }
 .menu__fr i.fa-solid.fa-heart:hover {
   opacity: 1;
-  animation: scal 0.5s ease-in-out;
+  animation: scal ease-in-out;
 }
 @keyframes scal {
-  from {
+  0% {
     transform: scale(0);
   }
-  to {
+  100% {
     transform: scale(1.8);
   }
 }
 
 i.fa-regular.fa-heart {
+  display: flex;
+  justify-content: flex-end;
   font-size: x-large;
+  transform: translate(-2rem, -4rem);
 }
 
 i.fa-solid.fa-heart {
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(-2rem, -5.5rem);
   cursor: pointer;
   font-size: x-large;
-  position: relative;
-  top: -1.6rem;
   background-image: linear-gradient(0deg, #9356dc, #FF79DA 90%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 i.fa-solid.fa-heart:hover {
   opacity: 1;
@@ -586,8 +586,10 @@ h4 {
   transform-origin: bottom;
 }
 .loader img {
-  padding: 2rem;
-  margin: 30rem 0 30rem 45rem;
+  width: 8rem;
+  height: 2rem;
+  padding: 1rem;
+  margin: 30rem 0 30rem 55rem;
   background: #99e2d0;
   border-radius: 1rem;
   animation: spin 3s linear infinite;
