@@ -228,20 +228,23 @@ body {
     }
 
     &__new {
-        background-color: $tertiaire;
-        font-weight: bold;
-        color: darken($tertiaire, 40);
-        font-size: small;
-        height: 1.7rem;
-        width: 5rem;
-        display: flex;
-        justify-content: center;
-        transform: translate(16rem, -12rem);
-        p {
-            margin-top: 0.4rem;
-        }
+        
+        position:relative; 
     }
-
+    &__new::before{
+        content: "nouveau";
+        position:absolute;
+        top: 1rem;
+        right: 1rem;
+        height: 2rem;
+        width: 5rem;
+        background-color: $tertiaire;
+        color: darken($tertiaire,45);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-weight:bold ;
+    }   
 }
 .img__bloc__text h2,
 p {
@@ -372,13 +375,18 @@ h3 {
         margin-bottom: 0;
     }
     i.fa-regular.fa-heart{
-      display: flex;
-      justify-content: flex-end;
-      transform: translate(-1.8rem, -2.1rem);
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: x-large;
+      
+      
     }
     
     i.fa-solid.fa-heart {
-        transform: translate(23.7, -3.6);
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
         cursor: pointer;
         font-size: x-large;
         background-image: linear-gradient(0deg, ($primaire), $secondaire 90%);
