@@ -394,14 +394,13 @@ h3::after {
   }
 }
 
-i.fa-regular.fa-heart {
+.img__bloc i.fa-regular.fa-heart {
   display: flex;
   justify-content: flex-end;
   font-size: x-large;
   transform: translate(-2rem, -4rem);
 }
-
-i.fa-solid.fa-heart {
+.img__bloc i.fa-solid.fa-heart {
   display: flex;
   justify-content: flex-end;
   transform: translate(-2rem, -5.5rem);
@@ -414,9 +413,8 @@ i.fa-solid.fa-heart {
   opacity: 0;
   transition: all 100ms ease-in-out;
 }
-i.fa-solid.fa-heart:hover {
+.img__bloc i.fa-solid.fa-heart:hover {
   opacity: 1;
-  animation: scal 0.5s ease-in-out;
 }
 
 .menu__miam {
