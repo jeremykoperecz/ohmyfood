@@ -24,13 +24,11 @@
         }
 }
 
-@keyframes animation{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
+@mixin menu{
+    display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
 }
 
 

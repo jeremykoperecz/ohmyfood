@@ -4,21 +4,32 @@
 html {
     font-family: 'Raleway', sans-serif;
 }
-
 body {
     margin: 0;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;  
+}
+.main--modif {
+    height: 92rem;
+    background-color: $gris;
+    @media(min-width:820px) {
+        height: 100rem;
+}
+}
+main {
+    height: 84rem;
+    @media(min-width: 820px) {  
+        height: 91rem;
+        transform: translateY(-1.5rem);
+    }
+
 }
 .main__index{
     height: auto;
-    transform: none;
-    
+    transform: none;    
     h1{
         margin-left: 1rem;
 }
 }
-
 .logo {
     display: flex;
     height: 2.5rem;
@@ -33,14 +44,9 @@ body {
             position: absolute;
             top: 0.4rem;
             left: 2.2rem;
-
     }
-}   
-
-
-    
+}       
 }
-
 .loca {
     display: flex;
     justify-content: center;
@@ -64,7 +70,6 @@ body {
 
     }
 }
-
 .header {
     @include ombre2;
     height: 23rem;
@@ -102,7 +107,6 @@ body {
     justify-content: center;
     margin-top: 2.5rem;
     margin-bottom: 7rem;
-
 
     .btn {
         border: none;
@@ -183,7 +187,6 @@ body {
     }
 }
 
-
 .number {
     display: flex;
     align-items: center;
@@ -215,8 +218,6 @@ body {
         height: auto;
         padding-top: 10rem;
         background-color:$background;
-
-
     }
 
     h1 {
@@ -294,20 +295,17 @@ footer {
             display: flex;
             justify-content: space-around;
         }
-
     }
 
     li {
         padding: 0.3rem;
         width: 13rem;
-
         &:hover {
             color: $primaire;
         }
 
         i {
             padding-right: 0.4rem;
-
         }
         a {
             color: white;
@@ -315,9 +313,7 @@ footer {
             &:hover {
                 color: $primaire;
             }
-
         }
-
     }
 }
 
@@ -330,14 +326,12 @@ i.fa-solid.fa-handshake-angle {
     font-size: 0.8rem;
 }
 
-/*page menu a la française*/
+/*page menu*/
 
 .logo a {
     color: black;
     transform: translate(-3.5rem, 0.5rem);
-
 }
-
 .top__img img {
     height: 18rem;
     width: 100%;
@@ -347,21 +341,7 @@ i.fa-solid.fa-handshake-angle {
     }
 
 }
-.main--modif {
-    height: 92rem;
-    background-color: #f7f7f7;
-    @media(min-width:820px) {
-        height: 100rem;
-}
-}
-main {
-    height: 84rem;
-    @media(min-width: 820px) {  
-        height: 91rem;
-        transform: translateY(-1.5rem);
-    }
 
-}
 
 h3 {
     padding: 2.5rem 0 0.5rem 2rem;
@@ -374,8 +354,6 @@ h3 {
         position: absolute;
         top: 4.2rem;
         left: 2rem;
-
-
     }
 }
 .menu__media {
@@ -384,39 +362,26 @@ h3 {
         flex-direction: column;
         justify-content: center;
         &--mod{
-            background: #f7f7f7;
+            background: $gris;
             height: 102rem;
         }
-
     }
-
 }
 @media(min-width:820px) {
     .menu__entre {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        @include menu;
     }
     .menu__plat {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        @include menu;
     }
     .menu__dessert {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        @include menu;
     }
     }
 
 .menu__btn{
     width: 60%;
 }
-
-
 
 .menu__fr {
     background-color: $background3;
@@ -429,7 +394,7 @@ h3 {
     }
 
     &--mod {
-        height: 78.5rem;
+        height: 76.5rem;
         @media(min-width:820px) {
             height: 91rem;
             h1{
@@ -446,8 +411,7 @@ h3 {
         @media(min-width:820px){
             text-align: center;
             
-        }
-            
+        }           
     }
 }
     i.fa-regular.fa-heart {
@@ -458,8 +422,6 @@ h3 {
         @media(min-width: 820px) {
             right: 2rem;
         }
-
-
     }
 
     i.fa-solid.fa-heart {
@@ -591,9 +553,7 @@ h4 {
         color: white;
         font-size: 2rem;
     }
-
 }
-
 
 .menu__prix {
     display: flex;
@@ -603,8 +563,6 @@ h4 {
         display: flex;
         align-items: flex-end;
     }
-
-
 }
 
 .header__btn--modif {
@@ -612,9 +570,7 @@ h4 {
     @media(min-width:820px){
         margin-top: 2rem;
     }
-    }
-
-
+}
 
 /* creation du loader*/
 .loader {
