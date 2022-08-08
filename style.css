@@ -20,10 +20,8 @@ body {
   height: auto;
   transform: none;
 }
-@media (min-width: 820px) {
-  .main__index h1 {
-    text-align: center;
-  }
+.main__index h1 {
+  margin-left: 1rem;
 }
 
 .logo {
@@ -208,6 +206,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  position: relative;
   background-color: rgb(247, 245, 245);
   height: 88rem;
   margin-top: 5rem;
@@ -220,12 +219,19 @@ body {
     justify-content: center;
     margin: auto;
     height: auto;
-    padding: 2rem;
+    padding-top: 10rem;
     background-color: rgb(247, 245, 245);
   }
 }
 .photo h1 {
   margin: 4.5rem 0 0.5rem 1rem;
+}
+@media (min-width: 820px) {
+  .photo h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .img__bloc {
@@ -238,7 +244,7 @@ body {
 }
 @media (min-width: 820px) {
   .img__bloc {
-    width: 40rem;
+    width: 50rem;
   }
 }
 .img__bloc img {

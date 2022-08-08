@@ -13,10 +13,9 @@ body {
 .main__index{
     height: auto;
     transform: none;
-    @media(min-width:820px){
+    
     h1{
-        text-align: center;
-    }
+        margin-left: 1rem;
 }
 }
 
@@ -203,7 +202,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    position: relative;
     background-color: $background;
     height: 88rem;
     margin-top: 5rem;
@@ -214,7 +213,7 @@ body {
         justify-content: center;
         margin: auto;
         height: auto;
-        padding: 2rem;
+        padding-top: 10rem;
         background-color:$background;
 
 
@@ -222,8 +221,12 @@ body {
 
     h1 {
         margin: 4.5rem 0 0.5rem 1rem;
+        @media(min-width:820px) {
+            position: absolute;
+            top: 0;
+            left: 0;
     }
-
+    }
 }
 
 .img__bloc {
@@ -234,7 +237,7 @@ body {
     background-color: white;
     position: relative;
     @media(min-width:820px) {
-        width: 40rem;
+        width: 50rem;
     }
 
     img {
