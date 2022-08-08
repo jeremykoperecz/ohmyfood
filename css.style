@@ -15,6 +15,11 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+@media (min-width: 820px) {
+  body {
+    height: 70rem;
+  }
+}
 
 .logo {
   display: flex;
@@ -23,10 +28,6 @@ body {
   margin-bottom: 1rem;
   justify-content: center;
   position: relative;
-}
-.logo i {
-  position: absolute;
-  top: 0.5rem;
 }
 @media (max-width: 370px) {
   .logo i {
@@ -336,7 +337,7 @@ i.fa-solid.fa-handshake-angle {
 }
 
 .main--modif {
-  height: 92rem;
+  height: 88rem;
   background-color: #f7f7f7;
 }
 @media (min-width: 820px) {
@@ -374,10 +375,6 @@ h3::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .menu__media--mod {
-    background: #f7f7f7;
-    height: 102rem;
   }
 }
 
@@ -664,11 +661,11 @@ h4 {
 }
 
 .header__btn--modif {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 @media (min-width: 820px) {
   .header__btn--modif {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 }
 
@@ -710,4 +707,4 @@ h4 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.style.map */
