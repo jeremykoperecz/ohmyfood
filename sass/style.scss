@@ -10,6 +10,15 @@ body {
     box-sizing: border-box;
    
 }
+.main__index{
+    height: auto;
+    transform: none;
+    @media(min-width:820px){
+    h1{
+        text-align: center;
+    }
+}
+}
 
 .logo {
     display: flex;
@@ -114,18 +123,21 @@ body {
     flex-direction: column;
     @media(min-width:820px) {
         display: flex;
-        flex-direction: row;
         padding-bottom: 3rem;
-
+        justify-content: center;
     }
-
-
+    @media(min-width:990px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        
     & h1 {
         margin-left: 1rem;
         font-size: 1.8rem;
         margin-top: 3rem;
         @media(min-width:820px) {
-            display: none;
+            
         }
 
     }
@@ -156,8 +168,7 @@ body {
         justify-content: flex-start;
         transition: background-color 0.3s, box-shadow 0.4s;
         @media(min-width:820px) {
-            width: 100%;
-            margin-top: 5rem;
+            margin-top: 3rem;
         }
         &:hover {
             background-color: lighten($primaire, 36);
@@ -167,8 +178,6 @@ body {
         }
 
     }
-
-
     .fa-solid {
         display: flex;
         align-items: center;
@@ -194,6 +203,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    
     background-color: $background;
     height: 88rem;
     margin-top: 5rem;
@@ -201,22 +211,17 @@ body {
     @media(min-width:820px) {
         display: flex;
         flex-direction: row;
-        width: auto;
+        justify-content: center;
         margin: auto;
-        justify-content: space-between;
-        border-radius: 2rem;
         height: auto;
         padding: 2rem;
-        background: linear-gradient(0deg, (lighten($primaire, 15)), (lighten($secondaire,15)) 90%);
+        background-color:$background;
 
 
     }
 
     h1 {
         margin: 4.5rem 0 0.5rem 1rem;
-        @media(min-width:820px) {
-            display: none;
-        }
     }
 
 }
@@ -227,8 +232,9 @@ body {
     height: 18rem;
     margin: 1rem;
     background-color: white;
+    position: relative;
     @media(min-width:820px) {
-        width: 25rem;
+        width: 40rem;
     }
 
     img {
@@ -488,12 +494,14 @@ h3 {
         display: flex;
         justify-content: flex-end;
         font-size: x-large;
-        transform: translate(-2rem, -4rem);
+        position: absolute;
+        top:14rem;
     }
     i.fa-solid.fa-heart {
         display: flex;
         justify-content: flex-end;
-        transform: translate(-2rem, -5.5rem);
+        position: absolute;
+        top: 14rem;
         cursor: pointer;
         font-size: x-large;
         background-image: linear-gradient(0deg, ($primaire), $secondaire 90%);
@@ -613,7 +621,7 @@ h4 {
     position: fixed;
     inset: 0;
     z-index: 1;
-    animation: fondu 400ms forwards 1.5s;
+    animation: fondu 300ms forwards 1s;
     transform-origin: bottom;
     img {
         width: 8rem;
@@ -622,7 +630,7 @@ h4 {
         margin: 30rem 0 30rem 55rem;
         background: $tertiaire;
         border-radius: 1rem;
-        animation: spin 3s linear infinite;
+        animation: spin 2s linear infinite;
         @keyframes spin {
             from {
                 transform: rotate(-360deg);

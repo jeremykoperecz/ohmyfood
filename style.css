@@ -16,6 +16,16 @@ body {
   box-sizing: border-box;
 }
 
+.main__index {
+  height: auto;
+  transform: none;
+}
+@media (min-width: 820px) {
+  .main__index h1 {
+    text-align: center;
+  }
+}
+
 .logo {
   display: flex;
   height: 2.5rem;
@@ -118,19 +128,21 @@ body {
 @media (min-width: 820px) {
   .recherche {
     display: flex;
-    flex-direction: row;
     padding-bottom: 3rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 990px) {
+  .recherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 .recherche h1 {
   margin-left: 1rem;
   font-size: 1.8rem;
   margin-top: 3rem;
-}
-@media (min-width: 820px) {
-  .recherche h1 {
-    display: none;
-  }
 }
 .recherche__txt {
   display: flex;
@@ -164,8 +176,7 @@ body {
 }
 @media (min-width: 820px) {
   .recherche__bouton {
-    width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 .recherche__bouton:hover {
@@ -206,22 +217,15 @@ body {
   .photo {
     display: flex;
     flex-direction: row;
-    width: auto;
+    justify-content: center;
     margin: auto;
-    justify-content: space-between;
-    border-radius: 2rem;
     height: auto;
     padding: 2rem;
-    background: linear-gradient(0deg, #bc95e9, #ffc6ef 90%);
+    background-color: rgb(247, 245, 245);
   }
 }
 .photo h1 {
   margin: 4.5rem 0 0.5rem 1rem;
-}
-@media (min-width: 820px) {
-  .photo h1 {
-    display: none;
-  }
 }
 
 .img__bloc {
@@ -230,10 +234,11 @@ body {
   height: 18rem;
   margin: 1rem;
   background-color: white;
+  position: relative;
 }
 @media (min-width: 820px) {
   .img__bloc {
-    width: 25rem;
+    width: 40rem;
   }
 }
 .img__bloc img {
@@ -487,12 +492,14 @@ i.fa-solid.fa-heart:hover {
   display: flex;
   justify-content: flex-end;
   font-size: x-large;
-  transform: translate(-2rem, -4rem);
+  position: absolute;
+  top: 14rem;
 }
 .img__bloc i.fa-solid.fa-heart {
   display: flex;
   justify-content: flex-end;
-  transform: translate(-2rem, -5.5rem);
+  position: absolute;
+  top: 14rem;
   cursor: pointer;
   font-size: x-large;
   background-image: linear-gradient(0deg, #9356dc, #FF79DA 90%);
@@ -680,7 +687,7 @@ h4 {
   position: fixed;
   inset: 0;
   z-index: 1;
-  animation: fondu 400ms forwards 1.5s;
+  animation: fondu 300ms forwards 1s;
   transform-origin: bottom;
 }
 .loader img {
@@ -690,7 +697,7 @@ h4 {
   margin: 30rem 0 30rem 55rem;
   background: #99e2d0;
   border-radius: 1rem;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
 }
 @keyframes spin {
   from {
