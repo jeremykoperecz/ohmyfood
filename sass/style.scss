@@ -127,7 +127,7 @@ main {
     @media(min-width:820px) {
         display: flex;
         padding-bottom: 3rem;
-        justify-content: center;
+        justify-content: space-around;
     }
     @media(min-width:990px) {
         display: flex;
@@ -155,7 +155,7 @@ main {
         font-size: larger;
         font-weight: 900;
         @media(min-width:820px) {
-            margin: 3rem;
+            margin:0 5rem 0 1rem;
         }
 
     }
@@ -183,7 +183,7 @@ main {
 
     }
     .fa-solid {
-        margin:0 1rem 0 1rem;
+        margin-right:1rem;
         display: flex;
         align-items: center;
     }

@@ -138,7 +138,7 @@ main {
   .recherche {
     display: flex;
     padding-bottom: 3rem;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 @media (min-width: 990px) {
@@ -167,7 +167,7 @@ main {
 }
 @media (min-width: 820px) {
   .recherche__txt2 {
-    margin: 3rem;
+    margin: 0 5rem 0 1rem;
   }
 }
 .recherche__bouton {
@@ -195,7 +195,7 @@ main {
   color: #9356dc;
 }
 .recherche .fa-solid {
-  margin: 0 1rem 0 1rem;
+  margin-right: 1rem;
   display: flex;
   align-items: center;
 }
