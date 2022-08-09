@@ -195,8 +195,12 @@ main {
   color: #9356dc;
 }
 .recherche .fa-solid {
+  margin: 0 1rem 0 1rem;
   display: flex;
   align-items: center;
+}
+.recherche.fa-mobile-screen-buton {
+  padding-right: 0.3rem;
 }
 
 .number {

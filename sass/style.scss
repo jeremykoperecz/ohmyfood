@@ -149,6 +149,7 @@ main {
         @media(min-width:820px) {
             margin: 1rem;
         }
+        
     }
     &__txt2 {
         font-size: larger;
@@ -182,8 +183,13 @@ main {
 
     }
     .fa-solid {
+        margin:0 1rem 0 1rem;
         display: flex;
         align-items: center;
+    }
+    &.fa-mobile-screen-buton{
+        padding-right: 0.3rem;
+        
     }
 }
 
