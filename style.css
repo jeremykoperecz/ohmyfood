@@ -642,6 +642,31 @@ i.fa-solid.fa-heart:hover {
     transform: rotate(0);
   }
 }
+.menu__btn:nth-child(5) {
+  animation-delay: 500ms;
+}
+@keyframes slide {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.menu__btn:hover .menu__prix {
+  margin-right: 0;
+}
+.menu__btn:hover i {
+  animation: rotate 0.5s both;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 
 h4 {
   margin: 0;
